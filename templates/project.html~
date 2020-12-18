@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block title %} <title>{{project.project_name}}</title> {% endblock title %}
+{% block content %}
+
+
+<img class="center" src= {{ project.big_image }} alt="Big image" width="100%" style="border-radius:20%" styles="background-size:contain">
+<div class="container-fluid leftalign" style="padding-top:50px">
+      <div class="row">
+	<div class="col-12 mt-3">
+	  <div class="card">
+            <div class="card-horizontal">
+            
+              <div class="card-body" style="text-align:left">
+		<h4 class="card-title">{{ project.project_name }}</h4>
+		<p class="card-text">
+
+	          <ul class="nav nav-tabs" style="margin-top:30px; text-align:left">
+		    <li class="nav-item">
+		      <a class="nav-link active" data-toggle="tab" href="#Description">Description</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" data-toggle="tab" href="#Info">Stats</a>
+		    </li>
+		    
+		  </ul>
+		  <div id="myTabContent" class="tab-content">
+		    <div class="tab-pane fade active show" id="Description" style="margin-top:30px">
+		      <p> {{ project.long_description }} <p>
+		    </div>
+		    <div class="tab-pane fade" id="Info">
+		      <div class="box" style="margin-top:30px">
+			<ul class="leftalign">
+			  <li><strong> Course ID: {{ project.course_id }}</strong></li><br>
+			  <li><strong> Course name: {{ project.course_name }}</strong></li><br>
+			  <li> <strong> Academic credits: {{ project.academic_credits }} </strong></li><br>
+			  <li> <strong> Group size: {{ project.group_size }}</strong></li><br>
+			  <li> <strong> Start date: {{ project.start_date }}</strong></li><br>
+			  <li> <strong> End date: {{ project.end_date }}</strong></li><br>
+			  <li>  <strong> Techniques used:  </strong>
+			    {% for tech in project.techniques_used %}
+			    <strong>{{ tech }}</strong>
+			    {% endfor %} </li><br>
+			  <li> <strong> Link to gitlab: {{ project.external_link }} </strong></li>
+			</ul>
+		      </div>
+		    </div>
+		  </div>
+		  
+		</p>
+              </div>
+            </div>
+
+	  </div>
+	</div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+{% endblock content%}

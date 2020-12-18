@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block title %} <title>Home</title> {% endblock title %}
+{% block content %}
+<div class="jumbotron">
+  <div class="center">
+    <img class="avatar" src="/static/style/self.jpg" style="border-radius:40%" width="40%">
+    <h3 class="name">Kasper Nilsson</h3>
+    <hr class="break">
+    <h5>Innovative Programming student at Linköping University</h5><br>
+    <p>First year student, age 25 and excited about programming. </p>
+    <a href="https://gitlab.liu.se/kasni325" class="fa fa-gitlab fa-4x"></a>
+     &nbsp;&nbsp;&nbsp;
+    <a href='https://github.com/kani95' class="fa fa-github fa-4x"><a/>
+    &nbsp;&nbsp;&nbsp;
+    <a href='https://www.linkedin.com/in/kasper-nilsson-6148671a5' class="fa fa-linkedin fa-4x"></a> 
+  </div>
+</div>
+<br><br>
+<div class="center">
+  <h3><u>Latest Project</u></h3>
+</div>
+<div class="container-fluid">
+  <a class="hyperlink" href="{{ url_for("project", id=l_project.project_id)}}">
+    <div class="row">
+      <div class="col-12 mt-3">
+        <div class="card cardeffect">
+          <div class="card-horizontal">
+            <div class="img-square-wrapper">
+              <img class="" src= {{ l_project.small_image }} alt="Card image cap" width="180" height="180">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">{{ l_project.project_name }}</h4>
+              <p class="card-text">{{ l_project.short_description }}</p>
+            </div>
+          </div>
+	  <div class="card-footer">
+	    <small style="float:left;"><b>Duration: </b>{{ l_project.start_date }} - {{ l_project.end_date }}</small>
+	    <small style="float:right"><b>Techniques:</b>
+              {% for tech in l_project.techniques_used %}
+              {% if l_project.techniques_used|length == loop.index %}
+               {{ tech[0]|upper }}{{ tech[1:] }}.
+              {% else %}
+	       {{ tech[0]|upper }}{{ tech[1:] }}.<small>, </small>   
+              {% endif %} 
+	      {% endfor %}
+            </small>
+	  </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+</div>
+</div>
+<div class="add_space">
+</div>
+{% endblock content %}

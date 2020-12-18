@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif
+} 
+
+.navs li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.add_space {
+    padding-bottom:100px;
+}
+
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-gitlab {
+    color:orange;
+}
+
+.fa-github {
+    color: white;
+}
+.fa-linkedin {
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.navs {
+    list-style: none;
+}
+
+.navs li {
+    display: inline-block;
+    padding: 9px 25px;
+}
+
+.navs li a {
+    color: #edf0f1;
+    padding: 9px 25px; 
+    background-color: rgba(0, 136, 169, 1);   
+    transition: all 0.3s ease 0s; 
+    border: none;   
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.navs li a:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.grid-container{
+  display: grid ;
+  grid-template-columns: 0.5fr 3fr;
+  grid-template-rows: 1fr 0.2fr;
+}
+
+table {
+  text-align: left;
+  font-size: 14px;
+  table-layout: fixed ;
+  width: 80% ;
+  border-collapse: collapse;
+}
+
+td {
+  width: 25% ;
+} 
+
+table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+    
+}
+
+.image {
+    height: 50px;
+    width: 85px;
+    float: center;
+}
+
+.title a{
+    font-size: 15px;
+}
+
+.info_l {
+    padding: 1px;
+    float: left;
+}
+
+div label input {
+   margin-right:100px;
+}
+
+body {
+    font-family:sans-serif;
+}
+
+.info_r {
+    padding: 1px;
+    float: right;
+}
+
+#Info:hover {
+    opacity: 2;
+    
+}
+
+.center {
+    text-align: center;
+}
+
+.cardeffect{
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardeffect:hover {
+    background-color: rgba(0, 100, 115, 1);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+    margin-bottom: 200px;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.form-control {
+    background-color: black;
+}
+
+.md-form active-cyan-2 mb-3{
+    background-color: black;
+}
+
+/* No hover effect for card link */
+.hyperlink {
+    all: inherit;
+}
+
+.hyperlink:hover {
+    all: inherit
+}
+
+.hyperlink p {
+    color: #B5B5B5;
+}
+
+.ck-button {
+
+    display:inline;
+}
+
+.center {
+    text-align: center;
+}
+
+.t
+
+.name {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    margin-left: 4px;
+    margin-right: 4px;
+
+    display: inline-block;
+    
+}
+
+.break {
+    display: block;
+     height: 1px;
+     border: 0;
+     border-top: 1px solid #ccc;
+     margin: 1em 0;
+     padding: 0;
+     margin-bottom: 30px;
+}
+
+
+.ulcenter {
+    text-align:center;
+    width:450px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+.space {
+    margin-bottom: 100px;
+}
+
+.wrapimg {
+    max-width: 600px;
+    max-height: 600px;
+    height: auto;
+    width: auto\9; /* ie8 */
+    resize: both;
+}
+
+.checkbox-inline {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input.search-query {
+    background-color:#1f1f1f;
+    color:white;
+    border-color: black;
+    width: 100%;
+}
+
+input.search-query:hover, input.search-query:focus {
+  border: 1px solid rgba(0, 136, 169, 1);
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.box{
+    width: 100%;
+    text-align:center;
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.leftalign {
+  text-align: left;
+  list-style-position: inside;
+}
+
+.card-footer > p {
+    float: left;
+    color: grey;
+    padding-top:10px;
+}
+
+.card-footer > strong {
+    float:right;
+    color:grey;
+    padding-top:10px;
+}
+
+   
+input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.toggle-control {
+  position: relative;
+  margin: 0 .25rem .25rem 0;
+  background: rgba(0, 136, 169, 1);
+  color: #FFF;
+  padding: .5rem 1rem .5rem 2rem;
+  border-radius: 2px;
+  border: 1px solid grey;
+  box-shadow: 0 .25rem 1rem -.5rem rgba(120,120,120);
+  transition: box-shadow ease-in .125s;
+  cursor: pointer;
+  width: 9em;
+}
+
+.toggle-control:hover {
+    box-shadow: 0 .0 2rem -.5rem rgba(120,120,120) ;
+}
+
+input[type="checkbox"] + .toggle-control:before {
+  content: "";
+  position: absolute;
+  width: .5rem;
+  height: .5rem;
+  left: .75rem;
+  top: 50%;
+  margin: -.25rem 0 0 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + .toggle-control:before {
+  background: #FEF;
+  box-shadow: 0 0 1rem #FFF;
+}
+
