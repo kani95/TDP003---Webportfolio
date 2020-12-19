@@ -40,7 +40,7 @@
               {% if l_project.techniques_used|length == loop.index %}
                {{ tech[0]|upper }}{{ tech[1:] }}.
               {% else %}
-	       {{ tech[0]|upper }}{{ tech[1:] }}.<small>, </small>   
+	       {{ tech[0]|upper }}{{ tech[1:] }}<small>, </small>   
               {% endif %} 
 	      {% endfor %}
             </small>

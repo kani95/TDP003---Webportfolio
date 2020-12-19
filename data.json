@@ -3,7 +3,7 @@
         "start_date": "2020-12-02",
         "short_description": "2D object-oriented game inspired from space invaders.",
         "course_name": "Project: Object-oriented system",
-        "long_description": "A 2D space invaders inspired game that lets you take control of a ladybug using the arrow keys and spacebar to fire your projectiles. The ladybug was in the middle of it's summer vacation when she is met by horrifying unknown bugs of various types that makes it clear that you are their next meal. Your goal is to eliminate these bugs while dodging acidic projectiles and camouflaged spiders. For each bug you defeat you gather points. The faster you do this the more points will be rewarded. Compare your best score through a leaderboard and challenge your friends. Can you survive the bug invasion? While working on this project I have gain knowledge of object-oriented programming and principles using C++, from working with classdesign, to pointers and polymorphism. It's been interesting learning cmake, make, clion, sfml and game design in general. Also very educational to be part of a project that let you be part of the entire development cycle, by writing our own requirements- and designspecification, and soon after realize the design in code and all this on a tight deadline.",
+        "long_description": "A 2D space invaders inspired game that lets you take control of a ladybug using the arrow keys and spacebar to fire your projectiles. The ladybug was in the middle of it's summer vacation when she is met by horrifying unknown bugs of various types that makes it clear that you are their next meal. Your goal is to eliminate these bugs while dodging acidic projectiles and camouflaged spiders. For each bug you defeat you gather points. The faster you do this the more points will be rewarded. Compare your best score through a leaderboard and challenge your friends. Can you survive the bug invasion? While working on this project I have gain knowledge of object-oriented programming and principles using C++. The focus of this project was working with classdesign, inheritance, polymorphism and pointers. We had to design our own game engine and state stack to change between the different states of the game. The development environment we used was mainly cmake, make, clion, sfml and basic game design in general. The experience has been very educational to be a part of a project through the entire development cycle, by writing our own requirements- and designspecification, and soon after realize the design in code and all this on a tight deadline. To learn more about the project or take a look at the source code, click the stats tab above for the link to the gitlab repository.",
         "group_size": 2,
         "academic_credits": "6hp",
         "lulz_had": "",
@@ -39,7 +39,7 @@
     "big_image": "/static/images/simple_website.png"
   },
   {
-    "start_date": "2020-10-30",
+    "start_date": "2018-10-30",
     "short_description": "This is a game that centers around creating your own platforming challenges.",
     "course_name": "Objectoriented system",
     "long_description": "Create your own platforming challenges and invite your friends to try them out. Choose between numerous of obstacles and enemies.",
@@ -55,12 +55,12 @@
     ],
     "project_name": "Don't Fall - The Game",
     "course_id": "TDP005",
-    "end_date": "2021-01-18",
+    "end_date": "2018-01-18",
     "project_id": 3,
     "big_image": "/static/images/df_big.png"
   },
   {
-    "start_date": "2021-02-01",
+    "start_date": "2019-02-01",
     "short_description": "Whatever web-related, take no risk, use QPL.",
     "course_name": "Computer language construction",
     "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc massa, accumsan non pharetra sit amet, rutrum feugiat nisi. Praesent consectetur, eros sit amet aliquet hendrerit, leo lectus viverra nulla, ut iaculis arcu nunc sit amet ligula. Vivamus aliquet nibh quis purus imperdiet, a dictum purus pretium. In dignissim hendrerit enim at eleifend. Curabitur blandit massa ac condimentum sollicitudin. Mauris malesuada magna sit amet ipsum porttitor dignissim. Integer eu velit ut diam maximus porttitor. Vestibulum consequat mauris hendrerit tortor venenatis eleifend. Ut blandit faucibus ante id semper.Integer scelerisque tempus lacus ut scelerisque. Sed viverra, massa vel ornare mollis, tellus lacus faucibus nulla, eu ornare magna lacus id dui. Sed nisl massa, tempor ut augue ut, commodo dignissim justo. Integer blandit in leo in posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec consequat a tellus eu tincidunt.\nPraesent mattis vehicula facilisis. Donec tincidunt leo id enim tempor, sed porta ligula pellentesque. Donec vitae tristique purus. Aliquam sapien urna, tempus at aliquet at, pretium vel nisi.\n<br>Aenean eget pharetra nulla, vel lacinia nisi. In viverra magna et diam ultricies, in lacinia sem tempus. Phasellus dictum lobortis eros venenatis sollicitudin. Vestibulum facilisis mi sit amet nulla pretium consequat. Ut aliquam malesuada convallis.In hac habitasse platea dictumst. Cras eget lobortis ipsum, vel lobortis justo. Suspendisse potenti. Duis sit amet ex hendrerit, aliquet leo non, porttitor justo. Vestibulum pharetra justo at facilisis convallis. Nunc porta lectus eget risus molestie euismod. Aenean porttitor viverra dictum. Quisque placerat dolor sit amet lacinia fermentum. Phasellus quis dolor et massa scelerisque commodo at vel odio. Nulla pellentesque leo vel arcu volutpat, vitae molestie enim semper. Integer non nisl nulla. Duis tincidunt, massa at volutpat tincidunt, orci justo gravida sapien, vel pharetra velit diam lobortis ligula. Fusce fermentum risus nibh, interdum consequat arcu porta eget. Suspendisse in faucibus est. Proin aliquet malesuada magna, ac pharetra dolor euismod sed.Sed lobortis mi id maximus feugiat. Sed a urna nec diam vehicula varius vel non nisi. Morbi at augue magna. Nullam lacinia purus vitae lectus eleifend, et bibendum lectus rhoncus. Duis a lobortis turpis, ultricies elementum odio. Fusce bibendum commodo risus eu accumsan. Maecenas vestibulum, mi ut congue elementum, enim risus egestas dolor, auctor sagittis eros purus quis erat. Vestibulum elit felis, aliquam sit amet neque a, ornare porttitor eros.Aliquam eu ante ullamcorper ex mattis suscipit ac in arcu. Nunc congue augue mauris, ut condimentum arcu iaculis quis. Sed vel dignissim justo, at mattis nunc. Praesent malesuada sit amet purus id lacinia. Donec finibus id tellus non hendrerit. Vivamus semper augue scelerisque dui finibus, vitae aliquam ligula ultricies. Morbi vitae neque sed nulla ultrices scelerisque ut ut ligula. Phasellus quis eros velit. Praesent suscipit lacus felis, in fringilla libero aliquam at. Suspendisse mauris metus, tristique et nisl ut, pellentesque lobortis ligula. Proin tellus libero, suscipit eu efficitur at, tincidunt nec ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ornare nec mauris a ornare. Nullam ac sem ullamcorper, sodales nisl a, ornare dui.",
@@ -79,12 +79,12 @@
     ],
     "project_name": "QPL - Quality Programming Language",
     "course_id": "TDP019",
-    "end_date": "2021-06-17",
+    "end_date": "2019-06-17",
     "project_id": 4,
     "big_image": "/static/images/web.png"
   },
   {
-    "start_date": "2021-09-03",
+    "start_date": "2018-09-03",
     "short_description": "Want to know more about cryptocurrency, invest or just want to discuss the subject with someone, then you have come to the right place. ",
     "course_name": "Project: Entrepreneurial Programming",
     "long_description": "The complete social network for people intrested in cryptocurrency, beginner or professional, everyone is welcome at the crypt. ",
@@ -101,7 +101,7 @@
     ],
     "project_name": "The Crypt - For everything cryptocurrency",
     "course_id": "TDP028",
-    "end_date": "2021-01-19",
+    "end_date": "2019-01-19",
     "project_id": 5,
     "big_image": "/static/images/crypt.png"
   }
