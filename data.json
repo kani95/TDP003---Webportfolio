@@ -1,4 +1,23 @@
 [
+     {
+        "start_date": "2020-09-01",
+        "short_description": "The webportfolio you're currently on.",
+        "course_name": "Project: Own computer environment",
+        "long_description": "A web-based portfolio the backend created using python as server-side language (API), flask framework, Jinja2 template language and JSON for database. The frontend created using HTML, CSS and bootstrap. The purpose of this webportfolio is to present projects that are made during the Innovative programming program at Linköping University. There is also projects presented that are made in my spare time. While working on this project I learned about HTTP, REST-API, docker and kubernetes and basic website design.",
+        "group_size": 2,
+        "academic_credits": "6hp",
+        "lulz_had": "",
+        "external_link": "https://github.com/kani95/TDP003---Webportfolio",
+        "small_image": "/static/images/webportshort.png",
+        "techniques_used": [
+	    "Python", "Latex", "Git", "Jinja2", "Flask", "HTML", "CSS", "Bootstrap", "JSON"
+    ],
+        "project_name": "Webportfolio",
+        "course_id": "TDP003",
+        "end_date": "2020-10-22",
+        "project_id": 6,
+        "big_image": "/static/images/webportlong.png"
+    },
     {
         "start_date": "2020-12-02",
         "short_description": "2D object-oriented game inspired from space invaders.",
@@ -7,7 +26,7 @@
         "group_size": 2,
         "academic_credits": "6hp",
         "lulz_had": "",
-        "external_link": "https://gitlab.liu.se/kasni325/tdp005-projekt",
+        "external_link": "https://github.com/kani95/TDP005---Bug-invasion",
         "small_image": "/static/images/ladybug2.png",
         "techniques_used": [
 	    "C++", "Latex", "Git", "Cmake", "Sfml"
