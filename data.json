@@ -3,7 +3,7 @@
         "start_date": "2020-09-01",
         "short_description": "The webportfolio you're currently on.",
         "course_name": "Project: Own computer environment",
-        "long_description": "A web-based portfolio the backend created using python as server-side language (API), flask framework, Jinja2 template language and JSON for database. The frontend created using HTML, CSS and bootstrap. The purpose of this webportfolio is to present projects that are made during the Innovative programming program at Linköping University. There is also projects presented that are made in my spare time. While working on this project I learned about HTTP, REST-API, docker and kubernetes and basic website design.",
+        "long_description": "A web-based portfolio where the backend is created using python as server-side language (API), flask framework, Jinja2 template language and JSON for database. The frontend created using HTML, CSS and bootstrap. The purpose of this webportfolio is to present projects that are made during the Innovative programming program at Linköping University. There is also projects presented that are made in my spare time. While working on this project I learned about HTTP, REST-API, docker and kubernetes and basic website design.",
         "group_size": 2,
         "academic_credits": "6hp",
         "lulz_had": "",
@@ -113,7 +113,6 @@
     "external_link": "YY",
     "small_image": "/static/images/socials.png",
       "techniques_used": [
-	  "Java",
 	  "HTML",
 	  "CSS",
 	  "Javascript"
