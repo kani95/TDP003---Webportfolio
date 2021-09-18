@@ -6,7 +6,7 @@ stages:
 
 docker_build:
   stage: build
-  image: docker:18-git
+  image: 
     name: gcr.io/kaniko-project/executor:debug
     entrypoint: []
   script:
