@@ -1,4 +1,4 @@
-image: "python:latest"
+image: docker:18-git
 
 stages:
   - build
@@ -131,3 +131,8 @@ deploy:
       EOF
   variables:
     GIT_STRATEGY: none
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+
+services:
+  - docker:19-dind
