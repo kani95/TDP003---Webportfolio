@@ -58,69 +58,23 @@
     "big_image": "/static/images/simple_website.png"
   },
   {
-    "start_date": "2018-10-30",
-    "short_description": "This is a game that centers around creating your own platforming challenges.",
-    "course_name": "Objectoriented system",
-    "long_description": "Create your own platforming challenges and invite your friends to try them out. Choose between numerous of obstacles and enemies.",
-    "group_size": 3,
-    "academic_credits": "8hp",
-    "lulz_had": "",
-    "external_link": "YY",
-    "small_image": "/static/images/df_small.png",
-    "techniques_used": [
-      "c++",
-      "CSV",
-      "python"
-    ],
-    "project_name": "Don't Fall - The Game",
-    "course_id": "TDP005",
-    "end_date": "2018-01-18",
-    "project_id": 3,
-    "big_image": "/static/images/df_big.png"
-  },
-  {
-    "start_date": "2019-02-01",
-    "short_description": "Whatever web-related, take no risk, use QPL.",
+    "start_date": "2021-02-01",
+    "short_description": "Imperative programming language with functional syntax",
     "course_name": "Computer language construction",
-    "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc massa, accumsan non pharetra sit amet, rutrum feugiat nisi. Praesent consectetur, eros sit amet aliquet hendrerit, leo lectus viverra nulla, ut iaculis arcu nunc sit amet ligula. Vivamus aliquet nibh quis purus imperdiet, a dictum purus pretium. In dignissim hendrerit enim at eleifend. Curabitur blandit massa ac condimentum sollicitudin. Mauris malesuada magna sit amet ipsum porttitor dignissim. Integer eu velit ut diam maximus porttitor. Vestibulum consequat mauris hendrerit tortor venenatis eleifend. Ut blandit faucibus ante id semper.Integer scelerisque tempus lacus ut scelerisque. Sed viverra, massa vel ornare mollis, tellus lacus faucibus nulla, eu ornare magna lacus id dui. Sed nisl massa, tempor ut augue ut, commodo dignissim justo. Integer blandit in leo in posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec consequat a tellus eu tincidunt.\nPraesent mattis vehicula facilisis. Donec tincidunt leo id enim tempor, sed porta ligula pellentesque. Donec vitae tristique purus. Aliquam sapien urna, tempus at aliquet at, pretium vel nisi.\n<br>Aenean eget pharetra nulla, vel lacinia nisi. In viverra magna et diam ultricies, in lacinia sem tempus. Phasellus dictum lobortis eros venenatis sollicitudin. Vestibulum facilisis mi sit amet nulla pretium consequat. Ut aliquam malesuada convallis.In hac habitasse platea dictumst. Cras eget lobortis ipsum, vel lobortis justo. Suspendisse potenti. Duis sit amet ex hendrerit, aliquet leo non, porttitor justo. Vestibulum pharetra justo at facilisis convallis. Nunc porta lectus eget risus molestie euismod. Aenean porttitor viverra dictum. Quisque placerat dolor sit amet lacinia fermentum. Phasellus quis dolor et massa scelerisque commodo at vel odio. Nulla pellentesque leo vel arcu volutpat, vitae molestie enim semper. Integer non nisl nulla. Duis tincidunt, massa at volutpat tincidunt, orci justo gravida sapien, vel pharetra velit diam lobortis ligula. Fusce fermentum risus nibh, interdum consequat arcu porta eget. Suspendisse in faucibus est. Proin aliquet malesuada magna, ac pharetra dolor euismod sed.Sed lobortis mi id maximus feugiat. Sed a urna nec diam vehicula varius vel non nisi. Morbi at augue magna. Nullam lacinia purus vitae lectus eleifend, et bibendum lectus rhoncus. Duis a lobortis turpis, ultricies elementum odio. Fusce bibendum commodo risus eu accumsan. Maecenas vestibulum, mi ut congue elementum, enim risus egestas dolor, auctor sagittis eros purus quis erat. Vestibulum elit felis, aliquam sit amet neque a, ornare porttitor eros.Aliquam eu ante ullamcorper ex mattis suscipit ac in arcu. Nunc congue augue mauris, ut condimentum arcu iaculis quis. Sed vel dignissim justo, at mattis nunc. Praesent malesuada sit amet purus id lacinia. Donec finibus id tellus non hendrerit. Vivamus semper augue scelerisque dui finibus, vitae aliquam ligula ultricies. Morbi vitae neque sed nulla ultrices scelerisque ut ut ligula. Phasellus quis eros velit. Praesent suscipit lacus felis, in fringilla libero aliquam at. Suspendisse mauris metus, tristique et nisl ut, pellentesque lobortis ligula. Proin tellus libero, suscipit eu efficitur at, tincidunt nec ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ornare nec mauris a ornare. Nullam ac sem ullamcorper, sodales nisl a, ornare dui.",
-    "group_size": 5,
+    "long_description": "Dopo is an imperative programming language with functional syntax. Dopo allows users to create basic datatypes such as integers, floats, booleans and strings, aswell as more complicated datatypes such as hashmaps and arrays. Dopo supports statements for selection, repetition and mathematical arithmetic. There is a inbuilt standard-library with functions meant for the string- and list-datatype. Dopo is using a recursive descent parser for its lexing and parsing stage. After that process is complete there will be a tree of nodes representing the constructs the user has typed throughout the code. Each construct is its own class and will after be executed individually until it reaches the top of the tree. Dopo is programmed using object-oriented principles in the programming language Ruby and tested with unittest framework." ,
+    "group_size": 2,
     "academic_credits": "10hp",
     "lulz_had": "",
-    "external_link": "YY",
-    "small_image": "/static/images/dev.png",
+    "external_link": "https://gitlab.liu.se/kasni325/dopo-version-1.0",
+    "small_image": "/static/images/dopo_small.png",
     "techniques_used": [
-	"ada",
-	"python",
-	"c++",
-	"HTML",
-	"CSS",
-	"Javascript"
+	"Ruby",
+	"RDParse"
     ],
-    "project_name": "QPL - Quality Programming Language",
+    "project_name": "Dopo",
     "course_id": "TDP019",
-    "end_date": "2019-06-17",
+    "end_date": "2021-05-20",
     "project_id": 4,
-    "big_image": "/static/images/web.png"
-  },
-  {
-    "start_date": "2018-09-03",
-    "short_description": "Want to know more about cryptocurrency, invest or just want to discuss the subject with someone, then you have come to the right place. ",
-    "course_name": "Project: Entrepreneurial Programming",
-    "long_description": "The complete social network for people intrested in cryptocurrency, beginner or professional, everyone is welcome at the crypt. ",
-    "group_size": 8,
-    "academic_credits": "10hp",
-    "lulz_had": "",
-    "external_link": "YY",
-    "small_image": "/static/images/socials.png",
-      "techniques_used": [
-	  "HTML",
-	  "CSS",
-	  "Javascript"
-    ],
-    "project_name": "The Crypt - For everything cryptocurrency",
-    "course_id": "TDP028",
-    "end_date": "2019-01-19",
-    "project_id": 5,
-    "big_image": "/static/images/crypt.png"
+    "big_image": "/static/images/dopo_large.png"
   }
 ]

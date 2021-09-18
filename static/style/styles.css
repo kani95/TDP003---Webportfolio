@@ -68,7 +68,7 @@ header {
 
 .navs li a:hover {
     background-color: rgba(0, 136, 169, 0.8);
-}
+}s
 
 .grid-container{
   display: grid ;
@@ -316,5 +316,10 @@ input[type="checkbox"] + .toggle-control:before {
 input[type="checkbox"]:checked + .toggle-control:before {
   background: #FEF;
   box-shadow: 0 0 1rem #FFF;
+}
+
+input[name="sort_byf"] {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.4rem;
 }
 
