@@ -24,6 +24,7 @@ deploy:
     url: http://${CI_PROJECT_PATH_SLUG}.kubernetes-public.it.liu.se/
   before_script: []
   script:
+    - kubectl convert -f ./my-deployment.yaml --output-version apps/v1
     - kubectl delete secret regcred || true
     - kubectl create secret docker-registry regcred --docker-server="$CI_REGISTRY" --docker-username="$CI_DEPLOY_USER" --docker-password="$CI_DEPLOY_PASSWORD"
     - |
