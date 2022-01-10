@@ -1,12 +1,10 @@
-image: "python:latest"
-
 stages:
   - build
   - deploy
 
 docker_build:
   stage: build
-  image: 
+  image:
     name: gcr.io/kaniko-project/executor:debug
     entrypoint: []
   script:
@@ -15,14 +13,18 @@ docker_build:
     - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile $DOCKER_PROXY --destination $CI_REGISTRY_IMAGE --verbosity warn
   only:
     - master
+    - main
 
-deploy:
+kube_deploy:
   stage: deploy
   image: boxboat/kubectl
   environment:
     name: production
     url: http://${CI_PROJECT_PATH_SLUG}.kubernetes-public.it.liu.se/
   before_script: []
+  only:
+    - master
+    - main
   script:
     - kubectl delete secret regcred || true
     - kubectl create secret docker-registry regcred --docker-server="$CI_REGISTRY" --docker-username="$CI_DEPLOY_USER" --docker-password="$CI_DEPLOY_PASSWORD"
@@ -116,6 +118,8 @@ deploy:
         name: ${CI_PROJECT_PATH_SLUG}
         annotations:
           kubernetes.io/ingress.class: nginx-public
+          kubernetes.io/tls-acme: "true"
+          traefik.ingress.kubernetes.io/router.middlewares: traefik-https-redirect@kubernetescrd
         labels:
           app: ${CI_PROJECT_PATH_SLUG}
           environment: $CI_ENVIRONMENT_SLUG
@@ -128,6 +132,10 @@ deploy:
                 serviceName: ${CI_PROJECT_PATH_SLUG}
                 servicePort: 80
               path: /
+        tls:
+        - hosts:
+          - '*.kubernetes-public.it.liu.se'
+          secretName: portfolio-public-tls
       EOF
   variables:
     GIT_STRATEGY: none
