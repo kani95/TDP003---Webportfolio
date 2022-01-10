@@ -2,8 +2,9 @@
 {% block title %} <title>{{project.project_name}}</title> {% endblock title %}
 {% block content %}
 
-
-<img class="center" src= {{ project.big_image }} alt="Big image" width="100%" style="border-radius:20%" styles="background-size:contain">
+<div class="large-image">
+	<img class="center" src= {{ project.big_image }} alt="Big image" max-height="300px" width="100%" style="border-radius:20%" styles="background-size:contain" />
+</div>
 <div class="container-fluid leftalign" style="padding-top:50px">
       <div class="row">
 	<div class="col-12 mt-3">

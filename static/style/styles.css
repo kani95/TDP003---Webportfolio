@@ -22,8 +22,6 @@
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
 }
 
-
-
 .fa:hover {
     opacity: 0.7;
 }
@@ -322,4 +320,5 @@ input[name="sort_byf"] {
     margin-top: 1.5rem;
     padding: 0.5rem 1.4rem;
 }
+
 

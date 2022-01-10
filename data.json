@@ -76,5 +76,27 @@
     "end_date": "2021-05-20",
     "project_id": 4,
     "big_image": "/static/images/dopo_large.png"
+  },
+  {
+    "start_date": "2021-09-12",
+    "short_description": "The Android app Konkarong allows users to post listings about missing items. It can be about a person, a pet or any object. Other users can then take a look at these listings to keep an extra eye on them in their daily lives and can then contact the listing owner if they should be identified.",
+    "course_name": "Project: Entrepreneurial programming",
+    "long_description": "The purpose of the Konkarong app is for a user to be able to post listings about something that has disappeared or stolen. It could be a person, a pet, a bicycle and so on. Each listing contains information on the following aspects: 1-3 images, a title,  a description, an upload date, an end date,  which address the advertised last was seen picked using google maps, which category the listing belongs to and contact information for the owner of the ad (email, phone number or both). Each user has an account linked to it which can be created via email and password, Google sign in or Facebook login. An account is required to be able to use the app's functionality. After a user has logged in it can then put up listings (max 20), search for listings and favorite the ones he/she wants to store (max 20). The user can see a list of their own posted listings as well as those they have favorite marked. After successfully placing the listing, the owner can choose to edit it with a new one information and then re-upload it or delete it in its entirety. There is also a profile page where only the user has access to information about profile picture, number of listings posted, number of favorite tagged listings and when the account was created. There is also the opportunity for users to contact those responsible in creating Konkarong via a link to email apps to give someone form of help desk support. The search takes place via free text where the user can specify the category and city and sort by the number of favorite markings, newest listings first or oldest first. After a search, relevant listings will appear presented in the form of smaller clickable cards that redirect the user to a page that gets complete information about the listings. The idea is that if a user identifies an advertised item can choose to contact the listing owner by phone or email depending on the listing owner's chosen contact information. Konkarong then provides an opportunity for users to spread the word about the lost as well Konkarong is thus aimed at people who want to contribute with more solidarity in everyday life." ,
+    "group_size": 1,
+    "academic_credits": "10hp",
+    "lulz_had": "",
+    "external_link": "https://gitlab.liu.se/kasni325/tdp028",
+    "small_image": "/static/images/tdp028_logo.png",
+    "techniques_used": [
+	"Java",
+	"Firebase",
+    "XML",
+    "Android studio"
+    ],
+    "project_name": "Konkarong",
+    "course_id": "TDP028",
+    "end_date": "2022-01-10",
+    "project_id": 5,
+    "big_image": "/static/images/konkarong.jpg"
   }
 ]

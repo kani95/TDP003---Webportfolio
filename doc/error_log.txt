@@ -2,3 +2,5 @@
 2020-10-30 16:14:34.049372 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 2020-12-19 12:47:32.716316 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 2021-09-18 19:40:55.970159 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2022-01-10 16:18:54.242667 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2022-01-10 16:32:55.747277 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
