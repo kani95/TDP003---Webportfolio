@@ -98,5 +98,56 @@
     "end_date": "2022-01-10",
     "project_id": 5,
     "big_image": "/static/images/konkarong.jpg"
+  },
+  {
+    "start_date": "2021-09-27",
+    "short_description": "A simple social media webb-application that allows users to register, log in and write messages to friends on their profile page",
+    "course_name": "Web-programming and interactivity",
+    "long_description": "Webb-based social media application where the user can create an account, search amongst users, send fried request and when accepted write messages on their profile page. Created with nodeJS and express on client- and serverside with database being mongoDB. Mocha and chai being used to write unittest" ,
+    "group_size": 2,
+    "academic_credits": "6hp",
+    "lulz_had": "",
+    "external_link": "https://gitlab.liu.se/kasni325/tdp013/-/tree/master/project",
+    "small_image": "/static/images/small_tdp013.png",
+    "techniques_used": [
+	"Html",
+	"Css",
+    "Bootstrap",
+    "Javascript",
+    "NodeJS",
+    "React",
+    "Mongodb",
+    "Mocha",
+    "Chai"
+    ],
+    "project_name": "Webster",
+    "course_id": "TDP013",
+    "end_date": "2021-10-15",
+    "project_id": 7,
+    "big_image": "/static/images/large_tdp013.png"
+  },
+  {
+    "start_date": "2021-11-03",
+    "short_description": "A simple chat application that allows two users to connect by ip-address and port number and send messages.",
+    "course_name": "Programming in C# and .NET Framework",
+    "long_description": "Webb-based chat-application where the user type in ip-address and port number and sends a invitation to another user. If the user accept then the two will be able to chat with each other. The chat history is then saved locally using a pseudo-database structured in XML nodes. Created using C# and .NET framwork with focus on WPF and notifyOnProperyChanged to update individual components in the application." ,
+    "group_size": 2,
+    "academic_credits": "4hp",
+    "lulz_had": "",
+    "external_link": "https://gitlab.liu.se/alibe500/tddd49",
+    "small_image": "/static/images/tddd49_small.png",
+    "techniques_used": [
+	"C#",
+	"XAML",
+    "WPF",
+    "XML",
+    "JSON",
+    ".NET"
+    ],
+    "project_name": "Chatter",
+    "course_id": "TDDD49",
+    "end_date": "2021-12-17",
+    "project_id": 8,
+    "big_image": "/static/images/large_tddd49.png"
   }
 ]
