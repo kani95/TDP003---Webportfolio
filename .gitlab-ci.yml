@@ -6,7 +6,7 @@ stages:
 
 docker_build:
   stage: build
-  image:
+  image: 
     name: gcr.io/kaniko-project/executor:debug
     entrypoint: []
   script:
@@ -31,7 +31,7 @@ deploy:
 
       kubectl apply -f - <<EOF
       ---
-      apiVersion: extensions/v1beta1
+      apiVersion: apps/v1
       kind: Deployment
       metadata:
         annotations:
