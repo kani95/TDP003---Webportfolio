@@ -358,6 +358,9 @@ header h1::after {
 } 
 
 @media screen and (max-width: 850px) {
+    nav {
+        margin-bottom: 40px;
+    }
     nav ul {
         display: flex;
         flex-direction: column;
