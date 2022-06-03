@@ -4,20 +4,55 @@
     <meta charset="utf-8">
     {% block title %}{% endblock title %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/static/style/styles.css">
+    <link rel="stylesheet" href="/static/style/styles_new.css">
     <link rel="icon" type="image/png" href="/static/images/favicon.ico">
-    <link rel="stylesheet" href="/static/style/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/static/style/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Multi-select -->
     <!-- <link rel="stylesshee" href="/static/css/bootstrap-select.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"> -->
 
   </head>
-  <div class="space">
+  <body>
+    <div id="grid-outer-container">
+      <nav>
+        <ul>
+          <li>
+            <a href="/home" class="border-left-to-right">
+              <span>Home</span>
+              <span class="slider"></span> 
+            </a>
+          </li>
+          <li>
+            <a href="/list" class="border-left-to-right">
+              <span>Projects</span>
+              <span class="slider"></span>
+            </a>
+          </li>
+          <li>
+            <a href="/techniques" class="border-left-to-right">
+              <span>Techniques</span>
+              <span class="slider"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="social-links">
+        <div class="container-social">
+          <a href='https://www.linkedin.com/in/kasper-nilsson-6148671a5' class="fa fa-linkedin fa-2x" style="text-decoration:none;"></a> 
+        </div>
+        <div class="container-social">
+          <a href='https://github.com/kani95' class="fa fa-github fa-2x" style="text-decoration:none;"><a/>
+        </div>
+        <div class="container-social">
+          <a href="https://gitlab.liu.se/kasni325" class="fa fa-gitlab fa-2x" style="text-decoration:none;"></a>
+        </div>
+      </div> 
+  <!-- <div class="space">
     <body class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary avatar">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary avatar"> -->
     <!--	<a class="navbar-brand"><pre>              </pre></a> -->
-	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+	<!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>
 
@@ -36,15 +71,15 @@
 	    </li>
 	  </ul>
 	</div>
-  </div>
+  </div> -->
   {% block content %}{% endblock %}
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-  
-  <div class="jumbotron">
+   -->
+  <!-- <div class="jumbotron">
     <p style="display:inline;">Contact me at:</p>
     <a href="#" style="font-size:medium" class="cryptedmail"
        data-name="Kasper_Nilsson"
@@ -52,6 +87,10 @@
        data-tld="com"
        onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
     <p style="float:right;" style="siplay:inline;">© 2020 Kasper Nilsson</p>
+    </div> -->
+      <!-- <footer>
+        <p>© Kasper Nilsson 2022</p>
+      </footer> -->
     </div>
-</body>
+  </body>
 </html>

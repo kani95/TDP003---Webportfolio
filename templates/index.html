@@ -1,7 +1,77 @@
 {% extends "layout.html" %}
 {% block title %} <title>Home</title> {% endblock title %}
 {% block content %}
-<div class="jumbotron">
+<div id="container-portrait">
+  <img src="../static/style/self.jpg" alt="profile portrait" />
+  <div id="speech-bbl">
+    <p>Third year student, age 27 and excited about programming. </p>
+  </div>
+</div>
+<header>
+  <h1> > Kasper Nilsson </h1>
+</header>
+<div id="container-terminal">
+  <div id="terminal-header">
+    <span id="red-circle" class="terminal-circle"></span>
+    <span id="yellow-circle" class="terminal-circle"></span>  
+    <span id="green-circle" class="terminal-circle"></span>
+  </div>
+  <div class="terminal-row">
+    <p class="terminal-input"> > Kasper.location</p>
+    <p class="terminal-output"> "Linköping, Östergötland" </p>
+  </div> 
+  <div class="terminal-row">
+    <p class="terminal-input"> > Kasper.education</p>
+    <p class="terminal-output"> "Innovative Programming bachelor programme - Linköping University" </p>
+  </div> 
+  <div class="terminal-row">
+    <p class="terminal-input"> > Kasper.interest</p>
+    <p class="terminal-output"> "['Programming', 'Reading', 'Cardio', 'E-sport']" </p>
+  </div> 
+  <div class="terminal-row">
+    <p class="terminal-input"> > Kasper.languages</p>
+    <p class="terminal-output"> "['Javascript', 'HTML', 'CSS', 'C++', 'C', 'Python 3', 'Ruby', 'C#', 'Java']" </p>
+  </div> 
+  <div class="terminal-row">
+    <p class="terminal-input"> > Kasper.frameworks</p>
+    <p class="terminal-output"> "['React', 'Vue 3', 'Next.js', 'Flask', 'Jinja2', 'Bootstrap 4']" </p>
+  </div>
+  <div class="terminal-row">
+    <p class="terminal-input"> > Kasper.backend</p>
+    <p class="terminal-output"> "['NodeJs', 'MongoDB', 'Firebase', 'PostgresSQL', 'MySQL', 'Prisma', 'Sequelize', 'Mongoose']" </p>
+  </div>
+  <div class="terminal-row">
+    <p class="terminal-input"> > Kasper.other_skills</p>
+    <p class="terminal-output"> "['Git', 'Android Studio', 'Docker', 'Linux', 'Bash', 'PowerShell', 'REST API', 'GraphQL', 'Socket.io']" </p>
+  </div> 
+  <div class="terminal-row">
+    <p id="terminal-cursor"> > </p>
+  </div> 
+</div>
+<h2 id="latest-project-header">Latest Project</h2>
+<div class="border-abs"></div>
+<article class="project-container">
+  <img src= {{ l_project.small_image }} alt="project image" />
+  <div class="project-text">
+    <h3>{{ l_project.project_name }}</h3>
+    <p>{{ l_project.short_description }}</p>
+    <div class="project-tech"> 
+      {% for tech in l_project.techniques_used %}
+        <span>{{ tech[0]|upper }}{{ tech[1:] }}</span> 
+      {% endfor %}
+    </div>
+  </div>
+  <div class="project-links">
+    <form action="{{ url_for('project', id=l_project.project_id) }}">
+      <input class="project-goto-project" type="submit" value="More info" />
+    </form>
+    <form action="{{ l_project.external_link }}">
+      <input class="project-goto-source" type="submit" value="View source" />
+    </form>
+  </div>
+</article>
+
+<!-- <div class="jumbotron">
   <div class="center">
     <img class="avatar" src="/static/style/self.jpg" style="border-radius:40%" width="40%">
     <h3 class="name">Kasper Nilsson</h3>
@@ -53,5 +123,5 @@
 </div>
 </div>
 <div class="add_space">
-</div>
+</div> -->
 {% endblock content %}
