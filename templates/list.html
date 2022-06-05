@@ -1,9 +1,44 @@
 {% extends "layout.html" %}
-{% block title %} <title>Search projects</title> {% endblock title %}
+{% block title %} <title>Search Projects</title> {% endblock title %}
 {% block content %}
-   
+<form>
+  <!-- <div class="">
+<input class="form-control search-query box" type="text" name="search" value="{{ search }}" class="selectpicker" placeholder="Search" aria-label="Search" autocomplete="off"/>
 
-<div class="center-screen">
+</div>
+<select name="sort_by" class="selectpicker" title="Sort by"
+  value="start_date">
+   <option value="start_date">Start Date</option>
+   <option value="end_date">End Date</option>
+   <option value="project_name">Project Name</option>
+   <option value="academic_credits">Academic credits</option>
+ </select>
+ <select id="sort_order", name="sort_order" class="selectpicker" title="Sort order">
+   <option value="desc">Descending</option>
+   <option value="asc">Ascending</option>
+ </select>
+
+<select name="search_fields" id="search_fields" class="selectpicker" multiple title="Search fields">
+ <option value="project_name">Project name</option>
+ <option value="start_date">Start date</option>
+ <option value="end_date">End date</option>
+ <option value="group_size">Group size</option>
+ <option value="short_description">Short desciption</option>
+ <option value="long_description">Long description</option>
+ <option value="academic_credits">Academic credits</option>
+ <option value="course_id">Course ID</option>
+ <option value="course_name">Course name</option>
+</select>
+<br><br>
+<input type="submit" value="Search" name="sort_byf"/> -->
+</form>
+
+
+
+
+
+
+<!-- <div class="center-screen">
   <form>
       <div class="md-form active-cyan-2 mb-3">
 	<input class="form-control search-query box" type="text" name="search" value="{{ search }}" class="selectpicker" placeholder="Search" aria-label="Search" autocomplete="off"/>
@@ -82,6 +117,6 @@
 </div>
 {% endfor %}
 <div class="add_space">
-</div>
+</div> -->
 
 {% endblock content%}
