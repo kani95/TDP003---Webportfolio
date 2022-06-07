@@ -25,6 +25,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     justify-items: center;
+    grid-auto-rows: minmax(min-content, max-content);
     row-gap: 30px;
 }
 nav {
@@ -260,6 +261,7 @@ header h1::after {
     justify-self: center;
 }
 .project-container {
+    position: relative;
     grid-column: span 3;
     max-width: 700px;
     justify-self: center;
@@ -271,7 +273,7 @@ header h1::after {
 .project-container img {
     grid-column: 1;
     max-width: 270px;
-    height: 300px;
+    height: 330px;
     grid-row: span 2;
 }
 .project-text {
@@ -281,6 +283,7 @@ header h1::after {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 .project-text h3 {
     text-align: center;
@@ -291,12 +294,15 @@ header h1::after {
 }
 .project-tech {
     padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 }
 .project-tech span {
     border: solid 2px rgb(21, 237, 205);
     border-radius: 3px;
-    width: 50px;
-    padding: 3px;
+    padding: 0 3px;
+    text-align: center;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .project-links {
@@ -305,6 +311,8 @@ header h1::after {
     display: flex;
     flex-direction: row;
     justify-self: center;
+    position: absolute;
+    bottom: 10;
 }
 .project-links input {
     height: 35px;
@@ -375,7 +383,7 @@ header h1::after {
 
 @media screen and (max-width: 806px) {
     nav {
-        height: 50px;
+        min-height: 50px;
     }
     #container-portrait {
         flex-direction: column-reverse;
@@ -407,7 +415,7 @@ header h1::after {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: 400px;
+        width: 400px;
         gap: 15px;
         padding-bottom: 10px;
     }
@@ -415,4 +423,109 @@ header h1::after {
         width: 200px;
         height: 200px;
     }
+    .project-links {
+        position: initial;
+    }
 }
+ 
+/* list.html */
+
+:root {
+  --rad: 10px;
+  --dur: .3s;
+  --btn-width: 75px;
+}
+#search-form {
+  position: relative;
+  grid-column: span 3;
+  width: 80%;
+  margin-bottom: 50px;
+}
+#search-input, #search-btn {
+  height: 55px;
+  border: 0;
+  color: #000;
+  font-size: 1.4em;
+}
+.search-input {
+  outline: 0;
+  width: 100%;
+  background: #e9e9e9;
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  appearance: none;
+  transition: all var(--dur) cubic-bezier(0, 0, 0.43, 1.49);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+.search-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  border-radius: 0 var(--rad) var(--rad) 0;
+  background: rgb(203 213 225) url('../images/search.png') no-repeat center;
+}
+#search-form input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+.active-search {
+    display: block;
+}
+#select-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bootstrap-select div {
+    color: rgb(119, 118, 118);
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+.bootstrap-select div:focus {
+    outline: none;
+    border: none;
+}
+.bootstrap-select {
+    margin-top: 20px;
+}
+.bootstrap-select .dropdown-menu {
+    background: rgb(203 213 225);
+}
+.bootstrap-select .btn, .bootstrap-select .btn:focus {
+    background: #e9e9e9;
+}
+#search-results {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 20px;
+}
+#search-results h4 {
+    grid-column: span 3;
+    justify-self: center;
+}
+.multiple-projects {
+    grid-column: initial;
+}
+
+@media screen and (min-width: 1015px) {
+    #search-form {
+        width: 800px;
+    }
+}
+@media screen and (max-width: 1435px) {
+    #search-results {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 622px) {
+    #select-form {
+        flex-direction: column;
+        align-items: center;
+    }
+}   

@@ -1,40 +1,64 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 {% extends "layout.html" %}
 {% block title %} <title>Search Projects</title> {% endblock title %}
 {% block content %}
-<form>
-  <!-- <div class="">
-<input class="form-control search-query box" type="text" name="search" value="{{ search }}" class="selectpicker" placeholder="Search" aria-label="Search" autocomplete="off"/>
-
-</div>
-<select name="sort_by" class="selectpicker" title="Sort by"
-  value="start_date">
-   <option value="start_date">Start Date</option>
-   <option value="end_date">End Date</option>
-   <option value="project_name">Project Name</option>
-   <option value="academic_credits">Academic credits</option>
- </select>
- <select id="sort_order", name="sort_order" class="selectpicker" title="Sort order">
-   <option value="desc">Descending</option>
-   <option value="asc">Ascending</option>
- </select>
-
-<select name="search_fields" id="search_fields" class="selectpicker" multiple title="Search fields">
- <option value="project_name">Project name</option>
- <option value="start_date">Start date</option>
- <option value="end_date">End date</option>
- <option value="group_size">Group size</option>
- <option value="short_description">Short desciption</option>
- <option value="long_description">Long description</option>
- <option value="academic_credits">Academic credits</option>
- <option value="course_id">Course ID</option>
- <option value="course_name">Course name</option>
-</select>
-<br><br>
-<input type="submit" value="Search" name="sort_byf"/> -->
+<form id="search-form">
+  <!-- <label for="search"></label> -->
+  <input id="search-input" class="search-input" name="search" type="text" placeholder="Search for projects..." autofocus autocomplete="off"/>
+  <button id="search-btn" class="search-btn" type="submit" name="sort_byf" value="Search"></button>
+  <div id="select-form">
+    <select id="searchfields-select" class="selectpicker" name="search_fields" data-width="70%" multiple placeholder="Want to specify searchfields?">
+      <option selected hidden>Choose searchfields</option>
+      <option value="project_name">Project name</option>
+      <option value="start_date">Start date</option>
+      <option value="end_date">End date</option>
+      <!-- <option value="group_size">Group size</option> -->
+      <option value="short_description">Short description</option>
+      <option value="long_description">Long description</option>
+      <!-- <option value="academic_credits">Academic credits</option> -->
+      <!-- <option value="course_id">Course ID</option> -->
+      <!-- <option value="course_name">Course name</option> -->
+    </select>
+    <select id="sort-select" name="sort_by" class="selectpicker" data-width="40%" placeholder="Sort by" value="start_date">
+      <option value="start_date">Start date</option>
+      <option value="end_date">End date</option>
+      <option value="project_name">Project name</option>
+      <!-- <option value="academic_credits">Academic credits</option> -->
+    </select>
+    <select id="order-select" name="sort_order" class="selectpicker" data-width="40%" placeholder="Order by" value="desc">
+      <option value="desc">Descending</option>
+      <option value="asc">Ascending</option>
+    </select>
+  </div>
 </form>
-
-
-
+<div id="search-results">
+  {% if empty_list %}
+  <h4>No projects found with that search :(</h4>
+  {% else %}
+    {% for project in projects %}
+    <article class="project-container multiple-projects">
+      <img src= {{ project.small_image }} alt="project image" />
+      <div class="project-text">
+        <h3>{{ project.project_name }}</h3>
+        <p>{{ project.short_description }}</p>
+        <div class="project-tech"> 
+          {% for tech in project.techniques_used %}
+            <span>{{ tech[0]|upper }}{{ tech[1:] }}</span> 
+          {% endfor %}
+        </div>
+      </div>
+      <div class="project-links">
+        <form action="{{ url_for('project', id=project.project_id) }}">
+          <input class="project-goto-project" type="submit" value="More info" />
+        </form>
+        <form action="{{ project.external_link }}">
+          <input class="project-goto-source" type="submit" value="View source" />
+        </form>
+      </div>
+    </article>
+    {% endfor %}
+  {% endif %}
+</div>
 
 
 
@@ -70,10 +94,10 @@
     <br><br>
     <input type="submit" value="Search" name="sort_byf"/>
   </form>
-</div>
+</div> -->
 
 
-{% if empty_list %}
+<!-- {% if empty_list %}
 <br>
 <div class="jumbotron">
   <h4>No projects found with that search :(</h4>

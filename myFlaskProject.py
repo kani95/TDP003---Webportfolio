@@ -88,7 +88,7 @@ def list():
     # get a list of all selected search fields that the user selected
     search_fields = request.args.getlist("search_fields")
     # if no search fields are selected from the user then search through all search fields
-    if bool(search_fields) is False:
+    if bool(search_fields) is False or search_fields[0] == "Choose searchfields":
         search_fields = None
     # if no sort by is selected then use default as start date    
     if bool(sort_byf) is False:
