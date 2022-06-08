@@ -37,26 +37,6 @@
         "project_id": 2,
         "big_image": "/static/images/ladybug1.png"
     },
-    
-    {
-    "start_date": "2020-08-19",
-    "short_description": "This is a simple website that shows answers to course assignments regarding computer environment management. ",
-    "course_name": "Computer environment management",
-    "long_description": "This is a site that displays answers to course questions regarding subjects such as: what is git and how do you use it?, variuos bash/python-scripts related content.",
-    "group_size": 1,
-    "academic_credits": "6hp",
-    "lulz_had": "",
-    "external_link": "https://php-web.edu.liu.se/~kasni325/TDP001/blog.html",
-    "small_image": "/static/images/tag.png",
-    "techniques_used": [
-	"HTML", "CSS", "Latex", "Python"
-    ],
-    "project_name": "Simple Website",
-    "course_id": "TDP001",
-    "end_date": "2020-10-12",
-    "project_id": 1,
-    "big_image": "/static/images/simple_website.png"
-  },
   {
     "start_date": "2021-02-01",
     "short_description": "Imperative programming language with functional syntax",

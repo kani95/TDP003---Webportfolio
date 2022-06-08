@@ -132,8 +132,6 @@ def search(db, sort_by='start_date', sort_order='desc',
     search_result = []
     
     for project in db:
-
-        
         technique_in_project = check_techniques(project, techniques)                    
         if technique_in_project == False:
             continue

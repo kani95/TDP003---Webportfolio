@@ -311,8 +311,8 @@ header h1::after {
     display: flex;
     flex-direction: row;
     justify-self: center;
-    position: absolute;
-    bottom: 10;
+    align-items: end;
+    padding-bottom: 10px;
 }
 .project-links input {
     height: 35px;
@@ -438,7 +438,7 @@ header h1::after {
 #search-form {
   position: relative;
   grid-column: span 3;
-  width: 80%;
+  width: 85%;
   margin-bottom: 50px;
 }
 #search-input, #search-btn {
@@ -498,6 +498,9 @@ header h1::after {
 .bootstrap-select .btn, .bootstrap-select .btn:focus {
     background: #e9e9e9;
 }
+.bootstrap-select .dropdown-menu .popover-header button {
+    display: none;
+}
 #search-results {
     grid-column: span 3;
     display: grid;
@@ -512,7 +515,6 @@ header h1::after {
 .multiple-projects {
     grid-column: initial;
 }
-
 @media screen and (min-width: 1015px) {
     #search-form {
         width: 800px;
@@ -523,7 +525,7 @@ header h1::after {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-@media screen and (max-width: 622px) {
+@media screen and (max-width: 780px) {
     #select-form {
         flex-direction: column;
         align-items: center;
