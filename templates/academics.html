@@ -1,903 +1,697 @@
 {% extends "layout.html" %}
-{% block title %} <title>My academics</title> {% endblock title %}
+{% block title %} <title>My Academics</title> {% endblock title %}
 {% block content %}
-<h1 id="academics-header">Completed university courses &#129489;&#8205;&#127891;</h1>
-
-<div class="p-table">
-    <div class="symbol unit rainbow-box unit-0 sans-serif">
-        <div class="course-header">
+<h1 id="academics-header">Completed University Courses &#129489;&#8205;&#127891;</h1>
+<div class="symbol unit">
+    <div class="course-header">
         <span class="course-code">
             Course code
         </span>
         <span class="course-grade">
             Grade
         </span>
-        </div>
-        <span class="course-name">Course name</span>
-        <span class="course-program">Program <br> *Click item to go to course description*</span>
-        <div class="course-footer">
+    </div>
+    <span class="course-name">Course name</span>
+    <span class="course-program">Programme <br> *Click item to go to course curricular*</span>
+    <div class="course-footer">
         <span class="course-subject">
             Subject
         </span>
         <span class="course-year">
-            Attented (year)
+            Attended (year)
         </span>
+    </div>
+</div>
+<div id="color-schema-list">
+    <div class="color-schema">
+        <p>Mathematics</p>
+        <div class="border-abs-lg math"></div>
+    </div>
+    <div class="color-schema">
+        <p>Computer Science</p>
+        <div class="border-abs-lg programming"></div>
+    </div>
+    <div class="color-schema">
+        <p>Economics</p>
+        <div class="border-abs-lg economy"></div>
+    </div>
+    <div class="color-schema">
+        <p>Other</p>
+        <div class="border-abs-lg other"></div>
+    </div>
+</div>
+<div class="p-table">
+    <div class="unit unit-1 math">
+        <div class="course-header">
+            <span class="course-code">
+                TDP015
+            </span>
+            <span class="course-grade">
+                3
+            </span>
+        </div>
+        <span class="course-name">Mathematics</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Math
+            </span>
+            <span class="course-year">
+                2021
+            </span>
         </div>
     </div>
-  
-    <div class="unit rainbow-box unit-1 sans-serif math">
-      <div class="course-header">
-        <span class="course-code">
-          TDP015
-        </span>
-        <span class="course-grade">
-          3
-        </span>
-      </div>
-      <span class="course-name">Mathematics</span>
-      <span class="course-program">B.Pr. in Programming</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Math
-        </span>
-        <span class="course-year">
-          2021
-        </span>
-      </div>
-    </div>
-    
-    <div class="unit rainbow-box unit-2 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          2
-        </span>
-      </div>
-      <span class="course-name">F</span>
-      <span class="course-program">Futura</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Paul Renner
-        </span>
-        <span class="course-year">
-          1927
-        </span>
-      </div>
-    </div>
-    
-    <!--  Bodoni  -->
-    <div class="unit rainbow-box unit-3 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          3
-        </span>
-      </div>
-      <span class="course-name">B</span>
-      <span class="course-program">Bodoni</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Gianbattista Bodoni
-        </span>
-        <span class="course-year">
-          1790
-        </span>
-      </div>
-    </div>
-  
-    <!--  Univers  -->
-    <div class="unit rainbow-box unit-4 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          4
-        </span>
-      </div>
-      <span class="course-name">U</span>
-      <span class="course-program">Universe</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Adrian Frutiger
-        </span>
-        <span class="course-year">
-          1954
-        </span>
-      </div>
-    </div>
-  
-  
-    <!--  Arzidenz  -->
-    <div class="unit rainbow-box unit-5 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          5
-        </span>
-      </div>
-      <span class="course-name">AK</span>
-      <span class="course-program">Akzidenz-Grotesk</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Ferdinand Theinhardt </br>
-          Hermann Berthold </br>
-          Gunter G. Lange
-        </span>
-        <span class="course-year">
-          1880 - </br> 1972
-        </span>
-      </div>
-    </div>
-  
-  
-  
-    <!--  Garamond  -->
-    <div class="unit rainbow-box unit-6 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          6
-        </span>
-      </div>
-      <span class="course-name">G</span>
-      <span class="course-program">Garamond</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Claude Garamond
-        </span>
-        <span class="course-year">
-          1530
-        </span>
-      </div>
-    </div>
-    
-    <!--  Times  -->
-    <div class="unit rainbow-box unit-7 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          7
-        </span>
-      </div>
-      <span class="course-name">T</span>
-      <span class="course-program">Times</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Stanley Morison
-        </span>
-        <span class="course-year">
-          1931
-        </span>
-      </div>
-    </div>
-    
-    <!--  Gill Sans  -->
-    <div class="unit rainbow-box unit-8 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          8
-        </span>
-      </div>
-      <span class="course-name">Gs</span>
-      <span class="course-program">Gill Sans</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Eric Gill
-        </span>
-        <span class="course-year">
-          1930
-        </span>
-      </div>
-    </div>
-  
-    <!--  Optima  -->
-    <div class="unit rainbow-box unit-9 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          9
-        </span>
-      </div>
-      <span class="course-name">O</span>
-      <span class="course-program">Optima</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Hermann Zapg
-        </span>
-        <span class="course-year">
-          1954
-        </span>
-      </div>
-    </div>
-  
-  
-    <!--  Caslon  -->
-    <div class="unit rainbow-box unit-10 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Garalde
-        </span>
-        <span class="course-grade">
-          10
-        </span>
-      </div>
-      <span class="course-name">C</span>
-      <span class="course-program">Caslon</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          William Caslon
-        </span>
-        <span class="course-year">
-          1725
-        </span>
-      </div>
-    </div>
-  
-  
-    <!--  Frutiger  -->
-    <div class="unit rainbow-box unit-14 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          14
-        </span>
-      </div>
-      <span class="course-name">Fr</span>
-      <span class="course-program">Frutiger</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Adrian Frutiger
-        </span>
-        <span class="course-year">
-          1977
-        </span>
-      </div>
-    </div>
-  
-    <!--  Bell Gothic  -->
-    <div class="unit rainbow-box unit-16 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          16
-        </span>
-      </div>
-      <span class="course-name">Bg</span>
-      <span class="course-program">Bell Gothic</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Chauncey H. Griffin
-        </span>
-        <span class="course-year">
-          1938
-        </span>
-      </div>
-    </div>
-  
-  
-    <!--  Syntax  -->
-    <div class="unit rainbow-box unit-18 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          18
-        </span>
-      </div>
-      <span class="course-name">S</span>
-      <span class="course-program">Syntax</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Hars Eduard Meier
-        </span>
-        <span class="course-year">
-          1968
-        </span>
-      </div>
-    </div>
-  
-    <!--  Meta  -->
-    <div class="unit rainbow-box unit-20 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          20
-        </span>
-      </div>
-      <span class="course-name">Me</span>
-      <span class="course-program">Meta</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Erik Spiekermann
-        </span>
-        <span class="course-year">
-          1991
-        </span>
-      </div>
-    </div>
-  
-    <!--  Avant Garde  -->
-    <div class="unit rainbow-box unit-22 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Geometric
-        </span>
-        <span class="course-grade">
-          22
-        </span>
-      </div>
-      <span class="course-name">Ag</span>
-      <span class="course-program">Avant Garde</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Herb Lubalin
-        </span>
-        <span class="course-year">
-          1968
-        </span>
-      </div>
-    </div>
-  
-  
-    <!--  Franklin Gothic  -->
-    <div class="unit rainbow-box unit-27 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          27
-        </span>
-      </div>
-      <span class="course-name">Fg</span>
-      <span class="course-program">Franklin Gothic</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Morriz F. Benton
-        </span>
-        <span class="course-year">
-          1902
-        </span>
-      </div>
-    </div>
-  
-    
-    <!--  Myriad  -->
-    <div class="unit rainbow-box unit-32 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          32
-        </span>
-      </div>
-      <span class="course-name">My</span>
-      <span class="course-program">Myriad</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Robert Slimbach
-          </br>
-          Carol Twombly
-        </span>
-        <span class="course-year">
-          1992
-        </span>
-      </div>
-    </div>
-  
-    <!--  Formata  -->
-    <div class="unit rainbow-box unit-65 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Formata
-        </span>
-        <span class="course-grade">
-          65
-        </span>
-      </div>
-      <span class="course-name">Fo</span>
-      <span class="course-program">Formata</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Bernd Mollenstadt
-        </span>
-        <span class="course-year">
-          1984
-        </span>
-      </div>
-    </div>
-  
-    <!--  Prokyon  -->
-    <div class="unit rainbow-box unit-71 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          71
-        </span>
-      </div>
-      <span class="course-name">Pr</span>
-      <span class="course-program">Prokyon</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Erhard Kaiser
-        </span>
-        <span class="course-year">
-          2002
-        </span>
-      </div>
-    </div>
-  
-    <!--  Prokyon  -->
-    <div class="unit rainbow-box unit-71 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          71
-        </span>
-      </div>
-      <span class="course-name">Pr</span>
-      <span class="course-program">Prokyon</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Ernard Kaiser
-        </span>
-        <span class="course-year">
-          2002
-        </span>
-      </div>
-    </div>
-  
-    <!--  Metro  -->
-    <div class="unit rainbow-box unit-72 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          72
-        </span>
-      </div>
-      <span class="course-name">Mt</span>
-      <span class="course-program">Metro</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          William A. Dwiggins
-        </span>
-        <span class="course-year">
-          1929
-        </span>
-      </div>
-    </div>
-  
-    
-    <!--  Antique Olive  -->
-    <div class="unit rainbow-box unit-74 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          74
-        </span>
-      </div>
-      <span class="course-name">Ao</span>
-      <span class="course-program">Antique Olive</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Roger Excoffron
-        </span>
-        <span class="course-year">
-          1962
-        </span>
-      </div>
-    </div>
-  
-    <!--  Eurostile  -->
-    <div class="unit rainbow-box unit-47 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Geometric
-        </span>
-        <span class="course-grade">
-          47
-        </span>
-      </div>
-      <span class="course-name">E</span>
-      <span class="course-program">Eurostile</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Aldo Novarese
-        </span>
-        <span class="course-year">
-          1963
-        </span>
-      </div>
-    </div>
-  
-    <!--  Didot  -->
-    <div class="unit rainbow-box unit-13 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Didone
-        </span>
-        <span class="course-grade">
-          13
-        </span>
-      </div>
-      <span class="course-name">D</span>
-      <span class="course-program">Didot</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Firmin Didot
-        </span>
-        <span class="course-year">
-          1799
-        </span>
-      </div>
-    </div>
-  
-    
-    <!--  Baskerville  -->
-    <div class="unit rainbow-box unit-19 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Realist
-        </span>
-        <span class="course-grade">
-          19
-        </span>
-      </div>
-      <span class="course-name">BA</span>
-      <span class="course-program">Baskerville</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          John Baskerville
-        </span>
-        <span class="course-year">
-          1754
-        </span>
-      </div>
-    </div>
-  
-  
-    <!--  Interstate  -->
-    <div class="unit rainbow-box unit-31 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Grotesque
-        </span>
-        <span class="course-grade">
-          31
-        </span>
-      </div>
-      <span class="course-name">In</span>
-      <span class="course-program">Interstate</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Tobias Frere-Jones
-        </span>
-        <span class="course-year">
-          1993
-        </span>
-      </div>
-    </div>
-  
-    <!--  Din  -->
-    <div class="unit rainbow-box unit-40 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Din
-        </span>
-        <span class="course-grade">
-          40
-        </span>
-      </div>
-      <span class="course-name">Di</span>
-      <span class="course-program">Din</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Ludwig Goller
-        </span>
-        <span class="course-year">
-          1926
-        </span>
-      </div>
-    </div>
-  
-    <!-- Stone   -->
-    <div class="unit rainbow-box unit-21 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Sans-serif
-        </span>
-        <span class="course-grade">
-          21
-        </span>
-      </div>
-      <span class="course-name">ST</span>
-      <span class="course-program">Stone</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Summer Stone
-        </span>
-        <span class="course-year">
-          1987
-        </span>
-      </div>
-    </div>
-  
-    <!--  Thesis  -->
-    <div class="unit rainbow-box unit-26 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Sans-serif, Mixed
-        </span>
-        <span class="course-grade">
-          26
-        </span>
-      </div>
-      <span class="course-name">Th</span>
-      <span class="course-program">Thesis</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Lucas de Groot
-        </span>
-        <span class="course-year">
-          1994
-        </span>
-      </div>
-    </div>
-  
-    <!--  Rotis  -->
-    <div class="unit rainbow-box unit-30 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Serif </br> Sans-serif
-        </span>
-        <span class="course-grade">
-          30
-        </span>
-      </div>
-      <span class="course-name">R</span>
-      <span class="course-program">Rotis</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Oti Aicher
-        </span>
-        <span class="course-year">
-          1988
-        </span>
-      </div>
-    </div>
-  
-    <!--  Trinite  -->
-    <div class="unit rainbow-box unit-17 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Serif </br> Realist
-        </span>
-        <span class="course-grade">
-          Trinite
-        </span>
-      </div>
-      <span class="course-name">Tr</span>
-      <span class="course-program">Trinite</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Bram de Does
-        </span>
-        <span class="course-year">
-          1982
-        </span>
-      </div>
-    </div>
-  
-    <!--  Minion  -->
-    <div class="unit rainbow-box unit-11 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Serif </br> Garalde
-        </span>
-        <span class="course-grade">
-          11
-        </span>
-      </div>
-      <span class="course-name">M</span>
-      <span class="course-program">Minion</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Robert Slimback
-        </span>
-        <span class="course-year">
-          1990
-        </span>
-      </div>
-    </div>
-  
-    <!--  Lucia  -->
-    <div class="unit rainbow-box unit-12 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Serif </br> Garalde
-        </span>
-        <span class="course-grade">
-          12
-        </span>
-      </div>
-      <span class="course-name">L</span>
-      <span class="course-program">Lucida</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Charles Bigelow </br>
-          Kris Holmes
-        </span>
-        <span class="course-year">
-          1985
-        </span>
-      </div>
-    </div>
-  
-    <!--  Fleischmann  -->
-    <div class="unit rainbow-box unit-15 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Serif </br> Garalde
-        </span>
-        <span class="course-grade">
-          15
-        </span>
-      </div>
-      <span class="course-name">Fl</span>
-      <span class="course-program">Fleischmann</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Erhard Kaiser
-        </span>
-        <span class="course-year">
-          1997
-        </span>
-      </div>
-    </div>
-  
-    <!-- Dax   -->
-    <div class="unit rainbow-box unit-75 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          75
-        </span>
-      </div>
-      <span class="course-name">Da</span>
-      <span class="course-program">Dax</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Hans Reichel
-        </span>
-        <span class="course-year">
-          1995
-        </span>
-      </div>
-    </div>
-  
-    <!-- Today Sans -->
-    <div class="unit rainbow-box unit-78 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          78
-        </span>
-      </div>
-      <span class="course-name">Ts</span>
-      <span class="course-program">Today Sans</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Volker Kuster
-        </span>
-        <span class="course-year">
-          1968
-        </span>
-      </div>
-    </div>
-    
-    <!-- Info -->
-    <div class="unit rainbow-box unit-87 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Humanist
-        </span>
-        <span class="course-grade">
-          87
-        </span>
-      </div>
-      <span class="course-name">If</span>
-      <span class="course-program">Info</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Erik Speikermann
-        </span>
-        <span class="course-year">
-          1996
-        </span>
-      </div>
-    </div>
-  
-    <!-- Gotham  -->
-    <div class="unit rainbow-box unit-60 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Geometric
-        </span>
-        <span class="course-grade">
-          60
-        </span>
-      </div>
-      <span class="course-name">Go</span>
-      <span class="course-program">Gotham</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Tobias Jones
-        </span>
-        <span class="course-year">
-          2000
-        </span>
-      </div>
-    </div>
-  
-    <!-- Walbaum -->
-    <div class="unit rainbow-box unit-44 sans-serif">
-      <div class="course-header">
-        <span class="course-code">
-          Sans-serif </br> Didone
-        </span>
-        <span class="course-grade">
-          44
-        </span>
-      </div>
-      <span class="course-name">W</span>
-      <span class="course-program">Walbaum</span>
-      <div class="course-footer">
-        <span class="course-subject">
-          Justus Walbaum
-        </span>
-        <span class="course-year">
-          1800
-        </span>
-      </div>
-    </div>
-  </div>
-  
-  
 
-{% endblock content%}
+    <div class="unit unit-2 math">
+        <div class="course-header">
+            <span class="course-code">
+                TAIU10
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Calculus</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Math
+            </span>
+            <span class="course-year">
+                2019
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-3 math">
+        <div class="course-header">
+            <span class="course-code">
+                TAIU05
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Linear Algebra</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Math
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-4 math">
+        <div class="course-header">
+            <span class="course-code">
+                TADI31
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Discrete Mathematics</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Math
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-5 math">
+        <div class="course-header">
+            <span class="course-code">
+                TAIU08
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Calculus in Several Variables</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Math
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-6 math">
+        <div class="course-header">
+            <span class="course-code">
+                TAIU06
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Mathematical Statistics</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Math
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-7 math">
+        <div class="course-header">
+            <span class="course-code">
+                TSRT04
+            </span>
+            <span class="course-grade">
+                3
+            </span>
+        </div>
+        <span class="course-name">Introduction in Matlab</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Math
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-20 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDDD12
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Database Technology</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2022
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-20 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDIU16
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Concurrent and Operating Systems Programming</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2022
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-20 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDIU11
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Operating Systems</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2022
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-22 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP032
+            </span>
+            <span class="course-grade">
+                3
+            </span>
+        </div>
+        <span class="course-name">Project:Agile System Development</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2022
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-27 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDDD60
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Interactive Systems</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2022
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-32 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TSIU02
+            </span>
+            <span class="course-grade">
+                3
+            </span>
+        </div>
+        <span class="course-name">Computer Hardware and Architecture</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2021
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-65 programming ">
+        <div class="course-header">
+            <span class="course-code">
+                TDDD49
+            </span>
+            <span class="course-grade">
+                3
+            </span>
+        </div>
+        <span class="course-name">Programming in C# and .NET Framework</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2021
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-71 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP013
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Web Programming and Interactivity</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2021
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-71 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP028
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Project: Entrepreneurial Programming</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2021
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-72 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDDI16
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Data Structures and Algorithms</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2021
+            </span>
+        </div>
+    </div>
+
+    <div class="unit  unit-74 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDTS04
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Computer Networks and Distributed Systems</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2021
+            </span>
+        </div>
+    </div>
+
+    <div class="unit  unit-47 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP007
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Computer Language Construction</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2021
+            </span>
+        </div>
+    </div>
+
+    <div class="unit  unit-13 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP019
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Project: Computer Language</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2021
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-19 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP004
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Object Oriented Programming</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-31 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP005
+            </span>
+            <span class="course-grade">
+                3
+            </span>
+        </div>
+        <span class="course-name">Project: Object Oriented System</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit  unit-40 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP003
+            </span>
+            <span class="course-grade">
+                3
+            </span>
+        </div>
+        <span class="course-name">Project: Personal Computer Environment</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-21 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP001
+            </span>
+            <span class="course-grade">
+                3
+            </span>
+        </div>
+        <span class="course-name">Management of Computer Environment</span>
+        <span class="course-program">B.Pr. in Programmingne</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-26 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDP002
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">Imperative Programming</span>
+        <span class="course-program">B.Pr. in Programming</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-8 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TDIU08
+            </span>
+            <span class="course-grade">
+                5
+            </span>
+        </div>
+        <span class="course-name">
+            Problem Solving and Programming
+        </span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2019
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-9 programming">
+        <div class="course-header">
+            <span class="course-code">
+                TSIU05
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Switching Theory and Logical Design</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2019
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-18 programming">
+        <div class="course-header">
+            <span class="course-code">
+                ETE332
+            </span>
+            <span class="course-grade">
+                3
+            </span>
+        </div>
+        <span class="course-name">Computer Security</span>
+        <span class="course-program">Self-contained</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Computer Science
+            </span>
+            <span class="course-year">
+                2021
+            </span>
+        </div>
+    </div>
+
+    <div class="unit  unit-10 economy">
+        <div class="course-header">
+            <span class="course-code">
+                TEAE01
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Industrial Economics, Basic Course</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Economics
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+
+    <div class="unit unit-14 other">
+        <div class="course-header">
+            <span class="course-code">
+                TEIE88
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Computer Law</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Other
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+    <div class="unit unit-16 other">
+        <div class="course-header">
+            <span class="course-code">
+                TGTU01
+            </span>
+            <span class="course-grade">
+                4
+            </span>
+        </div>
+        <span class="course-name">Technology and Ethics</span>
+        <span class="course-program">B.Sc. in Computer Engineering</span>
+        <div class="course-footer">
+            <span class="course-subject">
+                Other
+            </span>
+            <span class="course-year">
+                2020
+            </span>
+        </div>
+    </div>
+</div>
+
+    {% endblock content%}
