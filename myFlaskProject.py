@@ -115,12 +115,12 @@ def list():
 
     # if no project are found with the given search then render list.html with a message to the user that no project could be found with that search 
     if len(found_projects) == 0:
-        return render_template("list.html", search=search_project, all_tech=all_tech, projects=found_projects, sort_by=sort_byf, empty_list = True, sort_order=sort_order)
+        return render_template("list.html", search=search_project, all_tech=all_tech, technique=requested_tech, projects=found_projects, sort_by=sort_byf, empty_list = True, sort_order=sort_order)
         
    # found_projects = data.search(db, sort_by=sort_byf, sort_order=sort_order,
     #                             techniques=None, search=search_project, search_fields=search_fields)
     
-    return render_template("list.html", search=search_project, projects=found_projects, all_tech=all_tech, sort_by=sort_byf, sort_order=sort_order)
+    return render_template("list.html", search=search_project, projects=found_projects, all_tech=all_tech, techniques=requested_tech, sort_by=sort_byf, sort_order=sort_order)
 
 @app.route("/project/<int:id>")
 def project(id):
@@ -145,44 +145,23 @@ def project(id):
        return render_template('404.html'), 404
     return render_template("project.html", project=found_project)
 
-# @app.route("/techniques", methods=["GET", "POST"])
-# def techniques():
-#     ''' 
-#     Function that lists project based of the selected techniques.
-#     Can also sort the list by different fields.
+@app.route("/academics")
+def academics():
+    ''' 
+    Function that lists the academics I have studied.
 
-#     Parameter:
+    Parameter:
 
-#        None
+       None
     
-#     Return:
+    Return:
 
-#        Render the techniques-page
+       Render the academics-page
 
-#     ''' 
-#    # global db
-#     db = load_json()
-#     # get a list of all unique techniques that are being used by every project and capitalize the first character 
-#     all_tech = data.get_techniques(db)
-#     for index,tech in enumerate(all_tech):
-#         all_tech[index] = tech.capitalize()
-#     # get the techniques that the user has selected using POST method, if the user selects no techniques then list all projects
-#     if request.method == "POST":
-#         requested_tech = request.form.getlist("technique")
-#     else:
-#         requested_tech = None
+    ''' 
+   # global db
 
-#     sort_byf = request.args.get("sort_byf", "start_date")
-
-#     # find the projects with the selected techniques using the search method from the API
-#     found_projects = data.search(db, sort_by=sort_byf, sort_order='desc',
-#                      techniques=requested_tech, search="", search_fields=None)
-
-#     # if no projects matches the selected techniques render the HTML page techniques.html with an error message notifying it
-#     if len(found_projects) == 0:
-#         return render_template("techniques.html", all_tech=all_tech, projects=found_projects, empty_list = True)
-    
-#     return render_template("techniques.html", all_tech=all_tech, projects=found_projects)
+    return render_template("academics.html")
 
 
 @app.errorhandler(404)

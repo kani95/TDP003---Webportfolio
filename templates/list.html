@@ -19,7 +19,7 @@
     </select>
     <select class="selectpicker" name="technique" multiple data-live-search="true" data-width="70%" data-actions-box="true" placeholder="Want to specify technologies?" value="{{ technique }}">
       {% for tech in all_tech %}
-      <option value={{ tech }} >{{ tech }}</option>
+        <option value={{ tech }} >{{ tech }}</option>
       {% endfor %}
     </select>
     <select id="sort-select" name="sort_by" class="selectpicker" data-width="40%" data-header="Sort by">
