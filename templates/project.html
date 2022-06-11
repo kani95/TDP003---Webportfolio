@@ -1,63 +1,96 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 {% extends "layout.html" %}
 {% block title %} <title>{{project.project_name}}</title> {% endblock title %}
 {% block content %}
-
-<div class="large-image">
-	<img class="center" src= {{ project.big_image }} alt="Big image" max-height="300px" width="100%" style="border-radius:20%" styles="background-size:contain" />
-</div>
-<div class="container-fluid leftalign" style="padding-top:50px">
-      <div class="row">
-	<div class="col-12 mt-3">
-	  <div class="card">
-            <div class="card-horizontal">
-            
-              <div class="card-body" style="text-align:left">
-		<h4 class="card-title">{{ project.project_name }}</h4>
-		<p class="card-text">
-
-	          <ul class="nav nav-tabs" style="margin-top:30px; text-align:left">
-		    <li class="nav-item">
-		      <a class="nav-link active" data-toggle="tab" href="#Description">Description</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" data-toggle="tab" href="#Info">Stats</a>
-		    </li>
-		    
-		  </ul>
-		  <div id="myTabContent" class="tab-content">
-		    <div class="tab-pane fade active show" id="Description" style="margin-top:30px">
-		      <p> {{ project.long_description }} <p>
-		    </div>
-		    <div class="tab-pane fade" id="Info">
-		      <div class="box" style="margin-top:30px">
-			<ul class="center">
-			  <li><strong> Course ID: {{ project.course_id }}</strong></li><br>
-			  <li><strong> Course name: {{ project.course_name }}</strong></li><br>
-			  <li> <strong> Academic credits: {{ project.academic_credits }} </strong></li><br>
-			  <li> <strong> Group size: {{ project.group_size }}</strong></li><br>
-			  <li> <strong> Start date: {{ project.start_date }}</strong></li><br>
-			  <li> <strong> End date: {{ project.end_date }}</strong></li><br>
-			  <li>  <strong> Techniques used:  </strong>
-			    {% for tech in project.techniques_used %}
-			    <strong>{{ tech }}</strong>
-			    {% endfor %} </li><br>
-			  <li> <strong> Link to gitrepository: {{ project.external_link }} </strong></li>
-			</ul>
-		      </div>
-		    </div>
-		  </div>
-		  
-		</p>
-              </div>
-            </div>
-
-	  </div>
+<div id="full-project-container">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100 magic-border" src={{ project.big_image }} alt="Project image">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
-      </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="add_space">
+	<aside>
+		<h2>{{ project.project_name }}</h2>
+		<div class="directory-container invisible">
+			<ul class="directory-list">
+				<li>{{ project.project_name }}
+					<ul>
+						<li>Description
+							<ul>
+								<li class="project-desc">{{ project.long_description }}</li>
+							</ul>
+						</li>
+						<li>CourseID
+							<ul>
+								<li>{{ project.course_id }}</li>
+							</ul>
+						</li>
+						<li>CourseName
+							<ul>
+								<li>{{ project.course_name }}</li>
+							</ul>
+						</li>
+						<li>AcademicCredits
+							<ul>
+								<li>{{ project.academic_credits }}</li>
+							</ul>
+						</li>
+						<li>GroupSize
+							<ul>
+								<li>{{ project.group_size }}</li>
+							</ul>
+						</li>
+						<li>StartDate
+							<ul>
+								<li>{{ project.start_date }}</li>
+							</ul>
+						</li>
+						<li>EndDate
+							<ul>
+								<li>{{ project.end_date }}</li>
+							</ul>
+						</li>
+						<li>TechniquesUsed
+							<ul>
+								{% for tech in project.techniques_used %}
+								<li>{{ tech }}</li>
+								{% endfor %}
+							</ul>
+						</li>
+						<li>GitLink
+							<ul>
+								<a href={{ project.external_link }}><li>{{ project.external_link }}</li></a>
+							</ul>
+						</li>
+					</ul>
+				</li>
+		</div>
+		<!-- <p class="project-desc"> {{ project.long_description }}
+		<p>
+		<p>Course ID: {{ project.course_id }}</p>
+		<p>Course name: {{ project.course_name }}</p>
+		<p>Academic credits: {{ project.academic_credits }} </p>
+		<p>Group size: {{ project.group_size }}</p>
+		<p>Start date: {{ project.start_date }}</p>
+		<p>End date: {{ project.end_date }}</p>
+		<p>Techniques used:</p>
+		{% for tech in project.techniques_used %}
+		<p>{{ tech }}</p>
+		{% endfor %}
+		<p>Link to gitrepository: {{ project.external_link }}</p> -->
+	</aside>
+
 </div>
 {% endblock content%}
