@@ -86,7 +86,7 @@ footer {
     text-align: center;
     margin-top: 100px;
     height: 50px;
-    background-color: rgb(116, 116, 116);
+    background: linear-gradient(to right, rgb(74, 74, 74), rgb(80, 120, 138));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +94,7 @@ footer {
 }
 
 footer p {
-    color: white;   
+    color: white;
     font-size: 1em;
 }
 
@@ -640,7 +640,7 @@ header h1::after {
 /* academics.html */
 #academics-header {
     grid-column: span 3;
-    margin-bottom: 50px;
+    margin: 30px 0;
 }
 
 .p-table {
@@ -823,7 +823,7 @@ header h1::after {
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: center;
-    width: 100%;
+    width: 90%;
 }
 
 #full-project-container .carousel {
@@ -857,7 +857,7 @@ header h1::after {
     border-radius: 2px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     margin: 30px 5%;
-    padding: 5%;   
+    padding: 5%;
 }
 
 .pulse {
@@ -948,15 +948,20 @@ header h1::after {
     appearance: none;
     color: white;
     outline: none;
-    border-radius: 100px;
+    border-radius: 40px;
     border: 5px solid transparent;
-    background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
+    background: linear-gradient(white, white) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
 }
 
 @media screen and (max-width: 1127px) {
     #full-project-container {
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    #full-project-container aside {
+        min-width: 400px;
     }
 }

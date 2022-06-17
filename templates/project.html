@@ -2,14 +2,14 @@
 {% extends "layout.html" %}
 {% block title %} <title>{{project.project_name}}</title> {% endblock title %}
 {% block content %}
-<div id="full-project-container">
+<div id="full-project-container" class="magic-border">
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="d-block w-100 magic-border" src={{ project.big_image }} alt="Project image">
+				<img class="d-block w-100" src={{ project.big_image }} alt="Project image">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
