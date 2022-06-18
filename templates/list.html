@@ -10,12 +10,12 @@
       <option value="project_name" >Project name</option>
       <option value="start_date">Start date</option>
       <option value="end_date">End date</option>
-      <!-- <option value="group_size">Group size</option> -->
+      <option value="group_size">Group size</option>
       <option value="short_description">Short description</option>
       <option value="long_description">Long description</option>
-      <!-- <option value="academic_credits">Academic credits</option> -->
-      <!-- <option value="course_id">Course ID</option> -->
-      <!-- <option value="course_name">Course name</option> -->
+      <option value="academic_credits">Academic credits</option>
+      <option value="course_id">Course ID</option> 
+      <option value="course_name">Course name</option>
     </select>
     <select class="selectpicker" name="technique" multiple data-live-search="true" data-width="70%" data-actions-box="true" placeholder="Want to specify technologies?" value="{{ technique }}">
       {% for tech in all_tech %}
@@ -26,7 +26,7 @@
       <option value="start_date" {% if sort_by=='start_date' %} selected {% endif %}>Start date</option>
       <option value="end_date" {% if sort_by=='end_date' %} selected {% endif %}>End date</option>
       <option value="project_name" {% if sort_by=='project_name' %} selected {% endif %}>Project name</option>
-      <!-- <option value="academic_credits">Academic credits</option> -->
+      <option value="academic_credits">Academic credits</option>
     </select>
     <select id="order-select" name="sort_order" class="selectpicker" data-width="40%" data-header="Order by" >
       <option value="desc" {% if sort_order=='desc' %} selected {% endif %}>Descending</option>
