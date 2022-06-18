@@ -323,7 +323,7 @@ header h1::after {
 .project-container img {
     grid-column: 1;
     max-width: 270px;
-    height: 330px;
+    height: 100%;
     grid-row: span 2;
 }
 
@@ -337,7 +337,7 @@ header h1::after {
     text-align: center;
 }
 
-.project-text h3 {
+.project-text h4 {
     text-align: center;
 }
 
@@ -603,6 +603,7 @@ header h1::after {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin: 0 20px;
+    height: 100%;
 }
 
 #search-results h4 {
@@ -630,6 +631,9 @@ header h1::after {
     #select-form {
         flex-direction: column;
         align-items: center;
+    }
+    .project-container img {
+        margin-top: 10px;
     }
 }
 
