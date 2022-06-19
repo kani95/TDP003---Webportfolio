@@ -1,1 +1,1 @@
-web: gunicorn app:myFlaskProject.py
+web: gunicorn myFlaskProject.py:app
