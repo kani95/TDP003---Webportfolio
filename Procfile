@@ -1,1 +1,1 @@
-web: gunicorn myFlaskProject.py:app
+web: gunicorn --preload myFlaskProject.py:app
