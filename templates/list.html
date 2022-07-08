@@ -39,7 +39,7 @@
   <h4>No projects found with that search... &#x1F641;</h4>
   {% else %}
     {% for project in projects %}
-    <article class="project-container multiple-projects">
+    <article class="project-container multiple-projects item scrollFade">
       <img src= {{ project.small_image }} alt="project image" />
       <div class="project-text">
         <h3>{{ project.project_name }}</h3>

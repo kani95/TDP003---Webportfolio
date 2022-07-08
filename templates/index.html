@@ -1,16 +1,20 @@
 {% extends "layout.html" %}
 {% block title %} <title>Home</title> {% endblock title %}
 {% block content %}
-<div id="container-portrait">
-  <img src="../static/images/self.jpg" alt="profile portrait" />
-  <div id="speech-bbl">
-    <p>Third year student, age 27 and excited about software development. </p>
+<section class="introduction">
+  <div id="container-portrait">
+    <img src="../static/images/self.jpg" alt="profile portrait" />
+    <div id="speech-bbl">
+      <p>Third year student, age 27 and excited about software development. </p>
+    </div>
   </div>
-</div>
-<header>
-  <h1> > Kasper Nilsson</h1>
-</header>
-<div id="container-terminal">
+  <header>
+    <h1> > Kasper Nilsson</h1>
+  </header>
+</section>
+<h2 id="latest-project-header" class="item scrollFade">About Me</h2>
+<div class="border-abs item scrollFade"></div>
+<div id="container-terminal" class="item scrollFade">
   <div id="terminal-header">
     <span id="red-circle" class="terminal-circle"></span>
     <span id="yellow-circle" class="terminal-circle"></span>  
@@ -48,12 +52,12 @@
     <p id="terminal-cursor"> > </p>
   </div> 
 </div>
-<h2 id="latest-project-header">Latest Project</h2>
-<div class="border-abs"></div>
-<article class="project-container">
+<h2 id="latest-project-header" class="item scrollFade">Latest Project</h2>
+<div class="border-abs item scrollFade"></div>
+<article class="project-container item scrollFade">
   <img src= {{ l_project.small_image }} alt="project image" />
   <div class="project-text">
-    <h4>{{ l_project.project_name }}</h4>
+    <h3>{{ l_project.project_name }}</h3>
     <p>{{ l_project.short_description }}</p>
     <div class="project-tech"> 
       {% for tech in l_project.techniques_used %}
