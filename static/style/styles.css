@@ -652,8 +652,8 @@ header h1::after {
     #select-form {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 400px;
-        margin: 0 auto;
     }
     .project-container img {
         margin-top: 10px;
