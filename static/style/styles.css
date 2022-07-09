@@ -64,8 +64,7 @@ nav ul li a {
     top: 100%;
     margin: 0 auto;
     height: 4px;
-    margin-top: 10px;
-    background: linear-gradient(to right, #efefbb, #d4d3dd) no-repeat center center;
+    background:#747FE0;
     width: 0%;
     transition: width 0.2s ease;
 }
@@ -75,7 +74,7 @@ nav ul li a {
 }
 
 .border-left-to-right:hover span {
-    color: #aab0e6;
+    color: #5968f1;
 }
 
 footer {
@@ -98,16 +97,13 @@ footer p {
 
 .introduction {
     grid-column: span 3;
-    position: absolute;
     height:100vh;
     width: 100%;
-    /* background: url('../images/header.jpg') no-repeat center center;  */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: absolute;
-    /* background: #202124 no-repeat center center; */
     background: linear-gradient(to right, #c9d6ff, #e2e2e2) no-repeat center center;
     display: flex;
     flex-direction: column;
@@ -148,7 +144,7 @@ header h1::after {
 }
 
 #container-portrait img {
-    height: 350px;
+    max-height: 350px;
     max-width: 350px;
     border-radius: 30%;
 }
@@ -264,6 +260,7 @@ header h1::after {
 }
 
 #speech-bbl {
+    display: block;
     align-self: flex-start;
     max-width: 400px;
     height: 50%;
@@ -271,7 +268,6 @@ header h1::after {
     display: grid;
     place-items: center;
     background-color: linear-gradient(to right, #c9d6ff, #e2e2e2) no-repeat center center;
-
 }
 
 #speech-bbl p {
@@ -397,7 +393,7 @@ header h1::after {
     align-items: end;
     gap: 5px;
     padding-bottom: 10px;
-}   
+}
 
 .project-links input {
     height: 35px;
@@ -1045,11 +1041,11 @@ header h1::after {
     top: 0;
     left: 0;
     /* background-color: #fff; */
-    background: linear-gradient(to right, #5d4157, #a8caba) no-repeat center center;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2) no-repeat center center;
     overflow-x: hidden;
     transition: 0.5s;
   }
-  
+
   .overlay-content {
     position: relative;
     top: 25%;
@@ -1057,8 +1053,8 @@ header h1::after {
     text-align: center;
     margin-top: 30px;
   }
-  
-  .overlay a {	
+
+  .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -1067,11 +1063,11 @@ header h1::after {
     transition: 0.3s;
     font-weight: 500;
   }
-  
+
   .overlay a:hover, .overlay a:focus {
     opacity: 0.7;
   }
-  
+
   .overlay .closebtn {
     position: absolute;
     top: 20px;
@@ -1084,8 +1080,8 @@ header h1::after {
     bottom: 7%;
     right: 3%;
     height: 60px;
-    line-height: 59px;  
-    width: 60px;  
+    line-height: 59px;
+    width: 60px;
     font-size: 2em;
     font-weight: bold;
     border-radius: 50%;
@@ -1100,7 +1096,7 @@ header h1::after {
   #openNav:hover {
     opacity: 0.7;
   }
-  
+
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
@@ -1109,4 +1105,9 @@ header h1::after {
       right: 35px;
     }
   }
-  
+
+  @media screen and (max-height: 670px) {
+    #speech-bbl {
+        display: none;
+    } 
+  }
