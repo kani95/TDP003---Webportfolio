@@ -32,28 +32,28 @@ body {
     row-gap: 30px;
 }
 
-nav {
+/* nav {
     grid-column: 2;
     justify-self: center;
     grid-row: 1;
     max-height: 100px;
-}
+} */
 
-nav ul {
+/* nav ul {
     list-style: none;
-}
+} */
 
-nav ul li {
+/* nav ul li {
     display: inline-block;
     padding: 9px 20px;
     text-decoration: none;
-}
+} */
 
-nav ul li a {
+/* nav ul li a {
     text-decoration: none !important;
     font-size: 1.3em;
     transition: all 1s ease-out;
-}
+} */
 
 .border-left-to-right {
     position: relative;
@@ -69,7 +69,7 @@ nav ul li a {
     margin: 0 auto;
     height: 4px;
     margin-top: 10px;
-    background-color: #747FE0;
+    background: linear-gradient(to right, #efefbb, #d4d3dd) no-repeat center center;
     width: 0%;
     transition: width 0.2s ease;
 }
@@ -102,6 +102,7 @@ footer p {
 
 .introduction {
     grid-column: span 3;
+    position: absolute;
     height:100vh;
     width: 100%;
     /* background: url('../images/header.jpg') no-repeat center center;  */
@@ -109,14 +110,16 @@ footer p {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position: relative;
-    background: #202124 no-repeat center center;
+    position: absolute;
+    /* background: #202124 no-repeat center center; */
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2) no-repeat center center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
+
 header {
     grid-column: span 3;
     justify-self: center;
@@ -125,9 +128,10 @@ header {
 
 header h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3.5em;
     color: #747FE0;
+    text-shadow: 1px 1px #3e3e3f;
 }
 
 header h1::after {
@@ -166,6 +170,7 @@ header h1::after {
     flex-direction: row;
     justify-content: center;
     gap: 5px;
+    z-index: 1;
 }
 
 .fa:hover {
@@ -183,6 +188,10 @@ header h1::after {
 
 .fa-linkedin {
     color: #0072b1;
+}
+
+.about-me {
+    margin-top: 95vh;
 }
 
 #container-terminal {
@@ -265,7 +274,8 @@ header h1::after {
     margin: 0;
     display: grid;
     place-items: center;
-    background-color: #202124; 
+    background-color: linear-gradient(to right, #c9d6ff, #e2e2e2) no-repeat center center;
+
 }
 
 #speech-bbl p {
@@ -280,7 +290,7 @@ header h1::after {
     padding: 50px;
     border-radius: 11px;
     position: relative;
-    box-shadow: 12px 12px #3e3e3f;
+    box-shadow: 7px 7px #3e3e3f;
 }
 
 #speech-bbl p:after {
@@ -461,7 +471,7 @@ header h1::after {
 }
 
 @media screen and (max-width: 850px) {
-    nav {
+    /* nav {
         margin-bottom: 40px;
     }
 
@@ -470,13 +480,13 @@ header h1::after {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
+    } */
 }
 
 @media screen and (max-width: 806px) {
-    nav {
+    /* nav {
         min-height: 50px;
-    }
+    } */
 
     #container-portrait {
         flex-direction: column-reverse;
@@ -485,7 +495,11 @@ header h1::after {
     }
 
     #speech-bbl {
-        padding: 45px;
+        margin-bottom: 35px;
+    }
+
+    #speech-bbl, #speech-bbl p {
+        padding: 15px 10px;
     }
 
     #speech-bbl p:after {
@@ -540,7 +554,7 @@ header h1::after {
 #search-form {
     position: relative;
     grid-column: span 3;
-    width: 85%;
+    width: 92%;
     margin-bottom: 50px;
 }
 
@@ -653,7 +667,6 @@ header h1::after {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 400px;
     }
     .project-container img {
         margin-top: 10px;
@@ -1026,3 +1039,77 @@ header h1::after {
 .scrollFade--animate {
 	transition: opacity 0.4s ease-in-out;
 }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    /* background-color: #fff; */
+    background: linear-gradient(to right, #5d4157, #a8caba) no-repeat center center;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {	
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #5A5D7A;
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    opacity: 0.7;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  #openNav {
+    position: fixed;
+    bottom: 7%;
+    right: 3%;
+    height: 60px;
+    line-height: 59px;  
+    width: 60px;  
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #5A5D7A;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.36);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  #openNav:hover {
+    opacity: 0.7;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  

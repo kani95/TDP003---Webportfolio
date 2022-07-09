@@ -5,6 +5,16 @@ function setListeners() {
     $("#search-input").on("input", setSearchInput);
 }
 
+function setNav() {
+    $('#openNav').on('click', function() {
+        $('#myNav').css("width", "100%");
+      });
+      
+    $('#closeNav').on('click', function() {
+        $('#myNav').css("width", "0%");
+    });
+}
+
 function setProjectDir() {
     // get all folders in our .directory-list
     const allFolders = $(".directory-list li > ul");
@@ -81,6 +91,7 @@ function setupMagicBorder() {
 
 function main() {
     setListeners();
+    setNav();
     setSearchInput();
     setProjectDir();
     setupRootDir();

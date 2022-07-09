@@ -15,9 +15,11 @@
     <script type="text/javascript" src="../static/js/scrollFade.js"></script>
   </head>
   <body>
+    <div id="openNav" >&#9776;</div>
     <div id="grid-outer-container">
-      <nav>
-        <ul>
+      <nav id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+        <ul class="overlay-content">
           <li>
             <a href="/home" class="border-left-to-right">
               <span>Home</span>
