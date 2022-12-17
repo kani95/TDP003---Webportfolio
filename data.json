@@ -168,5 +168,56 @@
     "end_date": "2022-05-31",
     "project_id": 9,
     "big_image": "/static/images/web.png"
+  },
+  {
+    "start_date": "2022-09-04",
+    "short_description": "The goal was to redesign a MRP-algorithm that was currently a monolithic architecture to less separated microservices. We work based on an agile method and are on site at the company. I can't provide link to git-repo since I don't have the rights to the code anymore. But can ofcourse discuss this more in person inline with the agreement.",
+    "course_name": "Company Project",
+    "long_description": "Mrp is a algorithm to keep track of inventory and create order plans to make sure that it always on hand when needed. We utilized the agile-approach with close relation with the customer. The work required a redesign of current implementation and realisation using their standard for creating microservices which is using Java and relating frameworks/libraries.",
+    "group_size": 7,
+    "academic_credits": "10hp",
+    "lulz_had": "",
+    "external_link": "",
+    "small_image": "/static/images/mrp_small.png",
+    "techniques_used": [
+      "Java",
+      "Kubernetes",
+      "PostGresSQL",
+      "JPA",
+      "Mockito",
+      "SpringBoot"
+    ],
+    "project_name": "Mrp-algorithm to microservices.",
+    "course_id": "TDP017",
+    "end_date": "2022-12-12",
+    "project_id": 10,
+    "big_image": "/static/images/mrp_big.png"
+  },
+  {
+    "start_date": "2022-09-05",
+    "short_description": "Created a small bank system in seperated microservices. The system contains microservices for the bank operations, the customer information and the bank information.",
+    "course_name": "Enterprise systems",
+    "long_description": "Creating a small banking system using microservices in primary Java development technologies. A big focus was to explore diffent web-development frameworks aswell, the person-api is in django and the bank-api in ruby on rails. Using kafka as a central log-tool to log transactions/debits and error messages between each microservice.",
+    "group_size": 2,
+    "academic_credits": "6hp",
+    "lulz_had": "",
+    "external_link": "https://gitlab.liu.se/kasni325/tdp024/-/tree/main/lab_3",
+    "small_image": "/static/images/bank_small.png",
+    "techniques_used": [
+      "Java",
+      "Kafka",
+      "SpringBoot",
+      "JPA",
+      "Python",
+      "Django",
+      "Ruby",
+      "Ruby On Rails"
+    ],
+    "project_name": "Banking system in Microservices",
+    "course_id": "TDP024",
+    "end_date": "2022-10-10",
+    "project_id": 11,
+    "big_image": "/static/images/bank_small.png"
   }
+
 ]
